@@ -1,5 +1,6 @@
-import cx from 'classnames';
 import React from 'react';
+
+import { cx } from '@/utils/cx';
 
 type Props = {
   appearance: 'hero' | 'primary' | 'subTitle';

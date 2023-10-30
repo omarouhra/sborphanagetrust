@@ -1,7 +1,8 @@
-import cx from 'classnames';
 import type { StaticImageData } from 'next/image';
 import Image from 'next/image';
 import React, { useState } from 'react';
+
+import { cx } from '@/utils/cx';
 
 type Props = {
   alt: string;
