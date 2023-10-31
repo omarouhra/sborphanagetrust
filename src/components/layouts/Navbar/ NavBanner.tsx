@@ -1,9 +1,9 @@
 import React from 'react';
 
-import EmailIcon from '@/icons/emailIcon';
-import FacebookIcon from '@/icons/facebookIcon';
-import PhoneIcon from '@/icons/phoneIcon';
-import YoutubeIcon from '@/icons/youtubeIcon';
+import PhoneIcon from '@/icons/home/phoneIcon';
+import EmailIcon from '@/icons/share/emailIcon';
+import FacebookIcon from '@/icons/share/facebookIcon';
+import YoutubeIcon from '@/icons/share/youtubeIcon';
 
 function NavBanner() {
   return (
