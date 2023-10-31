@@ -34,6 +34,7 @@
         "project": "./tsconfig.json"
       },
       "rules": {
+        "no-nested-ternary": "off",
         "prettier/prettier": [
           "error",
           {
@@ -64,6 +65,7 @@
           "error",
           { "argsIgnorePattern": "^_" }
         ]
+      
       }
     }
   ]
