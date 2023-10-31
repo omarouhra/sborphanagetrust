@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '@/components/core/Button';
 import Heading from '@/components/core/Heading';
 import Paragraph from '@/components/core/Paragraph';
-import HeartIcon from '@/icons/heartIcon';
+import HeartIcon from '@/icons/home/heartIcon';
 
 export default function Hero() {
   return (
