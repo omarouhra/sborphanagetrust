@@ -14,8 +14,8 @@ module.exports = {
         },
         grey: {
           g1: '#A6A6A6',
-          g2: '#4F4F4F'
-        }
+          g2: '#4F4F4F',
+        },
       },
       fontFamily: {
         dmSans: ["'DM Sans'", 'sans-serif'],
