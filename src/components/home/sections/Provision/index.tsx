@@ -2,9 +2,9 @@ import React from 'react';
 
 import Heading from '@/components/core/Heading';
 import MainLayout from '@/components/layouts/MainLayout';
+import { PROVISIONS } from '@/utils/constants/provisions';
 
 import ProvItem from './core/ProvItem';
-import { PROVISIONS } from '@/utils/constants/provisions';
 
 export default function Provision() {
   return (
