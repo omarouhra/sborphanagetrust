@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
 
-import Navbar from '@/components/Navbar';
+import Hero from '@/components/home/sections/Hero';
+import Navbar from '@/components/layouts/Navbar';
 
 const Home: NextPage = () => (
-  <div className="flex h-screen w-full">
+  <div className="flex h-screen w-full flex-col">
     <Navbar />
-    {/* <h1 className="text-3xl font-semibold">Welcome back</h1>
-    <Button label="Donate Now" icon={<HeartIcon />}></Button> */}
+    <Hero />
   </div>
 );
 
