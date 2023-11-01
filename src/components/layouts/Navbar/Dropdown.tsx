@@ -8,30 +8,24 @@ type Props = {
     link: string;
     title: string;
   }[];
-  isOpen: boolean;
   pathname: string;
 };
-function Dropdown({ submenus, isOpen, pathname }: Props) {
+function Dropdown({ submenus, pathname }: Props) {
   return (
     <ul className="absolute w-40 rounded-md border border-green-g2 bg-white px-5">
       {submenus.map(({ link, title }, index: number) => (
-        <li
-          key={index}
-          className={cx(
-            'text-sm text-dark-d1 py-2',
-            isOpen
-              ? pathname === link
-                ? 'text-white border-white bg-green-g1 '
-                : 'hover:text-white border-green-g1 text-green-g1'
-              : pathname === link
-              ? 'text-green-g1 underline underline-offset-4 border-green-g1'
-              : 'hover:text-green-g1 transition-transform transform hover:underline hover:underline-offset-4',
-            isOpen &&
-              'w-full py-2 flex items-center justify-center rounded-md border md:hidden',
-          )}
-        >
+        <li key={index} className={cx('text-sm text-dark-d1 py-2')}>
           <Link href={link}>
-            <a>{title}</a>
+            <a
+              className={cx(
+                'w-max text-transparent bg-clip-text',
+                pathname === link
+                  ? 'bg-gradient'
+                  : 'hover:bg-gradient bg-dark-d1',
+              )}
+            >
+              {title}
+            </a>
           </Link>
         </li>
       ))}
