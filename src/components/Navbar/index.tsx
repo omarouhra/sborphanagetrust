@@ -1,11 +1,11 @@
 import React from 'react';
 
-import TopBar from './TopBar';
+import NavBanner from './ NavBanner';
 
 function Navbar() {
   return (
     <section className="w-full">
-      <TopBar />
+      <NavBanner />
     </section>
   );
 }

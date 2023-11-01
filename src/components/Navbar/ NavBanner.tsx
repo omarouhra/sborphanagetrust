@@ -5,7 +5,7 @@ import FacebookIcon from '@/icons/facebookIcon';
 import PhoneIcon from '@/icons/phoneIcon';
 import YoutubeIcon from '@/icons/youtubeIcon';
 
-function NavBanner() {
+export default function NavBanner() {
   return (
     <section className="flex w-full flex-col items-start space-y-2 bg-green-g1 px-3 py-5 text-white md:flex-row md:items-center md:justify-between md:space-x-3 md:px-10 xl:px-40">
       <div className="flex items-center space-x-4">
@@ -25,5 +25,3 @@ function NavBanner() {
     </section>
   );
 }
-
-export default NavBanner;
