@@ -8,6 +8,7 @@ module.exports = {
         green: {
           g1: '#009174',
           g2: '#F4F4F4',
+          g3: '#52BD94',
         },
         dark: {
           d1: '#242328',
@@ -19,6 +20,9 @@ module.exports = {
       },
       fontFamily: {
         dmSans: ["'DM Sans'", 'sans-serif'],
+      },
+      backgroundImage: {
+        gradient: 'linear-gradient(101deg, #009174 20.94%, #52BD94 100%)',
       },
     },
   },
