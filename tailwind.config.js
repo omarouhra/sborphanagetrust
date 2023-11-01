@@ -7,6 +7,11 @@ module.exports = {
       colors: {
         green: {
           g1: '#009174',
+          g2: '#F4F4F4',
+        },
+
+        dark: {
+          d1: '#242328',
         },
       },
       fontFamily: {
