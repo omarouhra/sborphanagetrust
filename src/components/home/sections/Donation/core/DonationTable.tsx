@@ -20,7 +20,7 @@ const styles = {
     title: 'text-white',
     text: 'text-white',
     priceText: 'text-white',
-    bgColor: 'bg-gradient-to-b from-[#009174] to-[#52BD94] lg:scale-110',
+    bgColor: 'bg-gradient-to-b from-[#009174] to-[#52BD94] xl:scale-110',
     featBg: 'bg-white',
     button: 'primary',
   },
@@ -47,7 +47,7 @@ export default function DonationTable({
   return (
     <div
       className={cx(
-        'h-[622px] md:w-[360px]  rounded-2xl px-2 py-9 md:px-5 shadow-xl shadow-gray-300',
+        'h-[622px] xl:w-[360px] md:w-[320px] w-full rounded-2xl px-2 py-9 xl:px-5 shadow-xl shadow-gray-300',
         styles[appearance].bgColor,
         className,
       )}
@@ -81,7 +81,12 @@ export default function DonationTable({
           <p>{price}</p>
         </div>
       </div>
-      <div className={cx('rounded-2xl py-6 px-4', styles[appearance].featBg)}>
+      <div
+        className={cx(
+          'rounded-2xl py-6 px-2 xl:px-4',
+          styles[appearance].featBg,
+        )}
+      >
         {features.map((feat, index: number) => (
           <div className="flex items-center space-x-3 py-3" key={index}>
             <div className="flex h-7 w-7 items-center justify-center rounded-full bg-green-g1 text-white">
