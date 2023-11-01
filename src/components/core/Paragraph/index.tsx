@@ -9,9 +9,9 @@ type Props = {
 };
 
 const styles = {
-  hero: 'text-base md:text-xl font-normal',
-  primary: 'text-base',
-  subTitle: 'text-sm',
+  hero: 'text-base md:text-xl md:leading-normal',
+  primary: 'text-lg',
+  subTitle: 'text-base md:leading-7',
 };
 
 function Paragraph({ appearance = 'primary', text, className }: Props) {
