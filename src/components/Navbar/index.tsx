@@ -2,7 +2,6 @@ import { Spin as Hamburger } from 'hamburger-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-
 import CustomImage from '@/components/core/CustomImage';
 import Logo from '@/public/assets/Logo.png';
 import { menuItems } from '@/utils/constants/menuItems';
@@ -14,6 +13,7 @@ import MenuItems from './MenuItems';
 export default function Navbar() {
   const { pathname } = useRouter();
   const [isOpen, setOpen] = useState(false);
+
 
   return (
     <section className="w-full">
