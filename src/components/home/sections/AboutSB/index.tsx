@@ -43,11 +43,11 @@ export default function AboutSB() {
           </div>
         </div>
         <div className="relative order-first md:my-12 lg:order-last">
-          <div className="hidden h-[430px] w-[490px] rounded-2xl border-2 border-green-g1/50  md:ml-20 md:flex" />
-          <div className="relative z-30 mb-8 flex justify-end md:absolute md:-bottom-16 md:left-28 md:mb-20 lg:-right-4 lg:bottom-3 lg:left-24 lg:mb-0">
+          <div className="hidden h-[430px] w-[490px] rounded-2xl border-2  border-green-g1/50 md:ml-20 md:flex  lg:ml-0 lg:h-[340px] lg:w-[400px]" />
+          <div className="relative z-30 mb-8 flex justify-end md:absolute md:-bottom-16 md:left-28 md:mb-20 lg:-right-0 lg:bottom-3 lg:left-8 lg:mb-0">
             <CustomImage src={aboutSB} alt="all-about-SBO" priority />
           </div>
-          <div className="absolute -right-3 -top-8 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-g1 to-green-g3 text-white md:-top-28 md:right-14 md:h-24 md:w-24 lg:-right-8 lg:-top-20">
+          <div className="absolute -right-3 -top-8 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-g1 to-green-g3 text-white md:-top-28 md:right-14 md:h-24 md:w-24 lg:-right-0 lg:-top-16 xl:-right-8 xl:-top-20">
             <CharityIcon className="h-8 w-8 md:h-16 md:w-16" />
           </div>
         </div>
