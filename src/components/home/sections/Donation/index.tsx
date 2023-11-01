@@ -68,7 +68,7 @@ export default function Donation() {
             className="max-w-lg text-center text-grey-g2"
           />
         </div>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-24">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:gap-24">
           {DONATION.map((donat, index: number) => (
             <DonationTable
               key={index}
