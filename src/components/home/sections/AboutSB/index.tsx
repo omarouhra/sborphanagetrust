@@ -1,9 +1,11 @@
 import React from 'react';
 
 import CustomImage from '@/components/core/CustomImage';
+import GradientContainer from '@/components/core/GradientContainer';
 import Heading from '@/components/core/Heading';
 import Paragraph from '@/components/core/Paragraph';
 import MainLayout from '@/components/layouts/MainLayout';
+import CharityIcon from '@/icons/home/CharityIcon';
 import aboutSB from '@/public/assets/home/aboutSB.png';
 
 export default function AboutSB() {
@@ -36,7 +38,7 @@ export default function AboutSB() {
               text="Losing a parent can mean that access to education, the protection of shelter, the sustenance of nutritious meals and the chance for a secure future all become an impossible dream.
              This is why the responsibility of care for the orphan falls on all of us."
               appearance="subTitle"
-              className="md:leading-6"
+              className="text-justify"
             />
           </div>
         </div>
@@ -45,28 +47,29 @@ export default function AboutSB() {
           <div className="relative z-30 mb-8 flex justify-end md:absolute md:-bottom-16 md:left-28 md:mb-20 lg:-right-4 lg:bottom-3 lg:left-24 lg:mb-0">
             <CustomImage src={aboutSB} alt="all-about-SBO" priority />
           </div>
+          <div className="absolute -right-3 -top-8 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-r from-green-g1 to-green-g3 text-white md:-top-28 md:right-14 md:h-24 md:w-24 lg:-right-8 lg:-top-20">
+            <CharityIcon className="h-8 w-8 md:h-16 md:w-16" />
+          </div>
         </div>
       </div>
-      <div className="rounded-2xl bg-gradient-to-r from-[#009174] to-[#52BD94] text-center text-green-g2">
-        <div className="bg-[url('/assets/home/mask-ob.png')] bg-cover bg-no-repeat px-2 py-8 md:px-12 md:py-16">
-          <Heading
-            text="SB Orphanage"
-            className="mb-6 font-bold"
-            appearance="primary"
-          />
-          <Paragraph
-            text="Is dedicated to improving the welfare of children who have become uncared for in the district of Sylhet Bangladesh.
+      <GradientContainer>
+        <Heading
+          text="SB Orphanage"
+          className="mb-6 font-bold"
+          appearance="primary"
+        />
+        <Paragraph
+          text="Is dedicated to improving the welfare of children who have become uncared for in the district of Sylhet Bangladesh.
               The mission we intend to carry out is such that we aim to deliver relief in the form of aid ranging from the provision of shelter, food, clothing, education and medical support to those children
               within the communities that are deprived as result of unfortunate economical and social factors."
-            className="md:leading-8"
-          />
-          <Paragraph
-            text="In doing this we hope to help rebuild lives and give more confidence to families in need with particular
+          className="md:leading-8"
+        />
+        <Paragraph
+          text="In doing this we hope to help rebuild lives and give more confidence to families in need with particular
               emphasis on abandoned and orphaned children within these communities."
-            className="md:leading-8"
-          />
-        </div>
-      </div>
+          className="md:leading-8"
+        />
+      </GradientContainer>
     </MainLayout>
   );
 }
