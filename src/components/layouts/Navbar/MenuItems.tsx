@@ -6,7 +6,6 @@ import { cx } from '@/utils/cx';
 import Dropdown from './Dropdown';
 
 type Props = {
-  isOpen: boolean;
   items: {
     link: string;
     title: string;
@@ -17,7 +16,7 @@ type Props = {
   };
   pathname: string;
 };
-function MenuItems({ items, isOpen, pathname }: Props) {
+function MenuItems({ items, pathname }: Props) {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   const handleMouseEnter = () => {
@@ -30,16 +29,10 @@ function MenuItems({ items, isOpen, pathname }: Props) {
   return (
     <li
       className={cx(
-        'text-sm text-dark-d1',
-        isOpen
-          ? pathname === items.link
-            ? 'text-white border-white bg-green-g1 '
-            : 'hover:text-white border-green-g1 text-green-g1'
-          : pathname === items.link
-          ? 'text-green-g1 underline underline-offset-4 border-green-g1'
-          : 'hover:text-green-g1 transition-transform transform hover:scale-110 hover:underline hover:underline-offset-4',
-        isOpen &&
-          'w-full py-2 flex items-center justify-center rounded-md border md:hidden',
+        'text-sm text-dark-d1 lg:text-base group font-semibold px-5 flex flex-nowrap py-2 rounded-3xl transition-all duration-200 ',
+        pathname === items.link
+          ? 'bg-green-g1 bg-opacity-30'
+          : 'hover:bg-green-g1 hover:bg-opacity-30',
       )}
     >
       {items.submenu ? (
@@ -48,20 +41,34 @@ function MenuItems({ items, isOpen, pathname }: Props) {
           onMouseLeave={handleMouseLeave}
           className="group relative"
         >
-          <button type="button" aria-haspopup="menu">
+          <button
+            type="button"
+            aria-haspopup="menu"
+            className={cx(
+              'w-max text-transparent bg-clip-text',
+              pathname === items.link
+                ? 'bg-gradient'
+                : 'group-hover:bg-gradient bg-dark-d1',
+            )}
+          >
             {items.title}
           </button>
           {isDropdownVisible && (
-            <Dropdown
-              submenus={items.submenu}
-              isOpen={isOpen}
-              pathname={pathname}
-            />
+            <Dropdown submenus={items.submenu} pathname={pathname} />
           )}
         </div>
       ) : (
         <Link href={items.link}>
-          <a>{items.title}</a>
+          <a
+            className={cx(
+              'w-max text-transparent bg-clip-text',
+              pathname === items.link
+                ? 'bg-gradient'
+                : 'group-hover:bg-gradient bg-dark-d1',
+            )}
+          >
+            {items.title}
+          </a>
         </Link>
       )}
     </li>
