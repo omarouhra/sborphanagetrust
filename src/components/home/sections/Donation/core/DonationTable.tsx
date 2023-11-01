@@ -23,7 +23,6 @@ const styles = {
     bgColor: 'bg-gradient-to-b from-[#009174] to-[#52BD94] lg:scale-110',
     featBg: 'bg-white',
     button: 'primary',
-    buttStyle: '',
   },
   normal: {
     title: 'text-dark-d1',
@@ -32,7 +31,6 @@ const styles = {
     bgColor: 'bg-white',
     featBg: 'bg-[#F9FAFB]',
     button: 'secondary',
-    buttStyle: 'shadow-xl shadow-gray-300',
   },
 };
 
@@ -96,7 +94,7 @@ export default function DonationTable({
           <Button
             label={label}
             appearance={styles[appearance].button as any}
-            className={styles[appearance].buttStyle as any}
+            className="shadow-xl shadow-gray-300"
           />
         </div>
       </div>
