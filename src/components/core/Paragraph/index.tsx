@@ -9,15 +9,13 @@ type Props = {
 };
 
 const styles = {
-  hero: 'text-base md:text-xl',
-  primary: 'text-lg',
-  subTitle: 'text-base',
+  hero: 'text-base md:text-xl font-normal',
+  primary: 'text-base',
+  subTitle: 'text-sm',
 };
 
 function Paragraph({ appearance = 'primary', text, className }: Props) {
-  return (
-    <p className={cx('font-normal', styles[appearance], className)}>{text}</p>
-  );
+  return <p className={cx(styles[appearance], className)}>{text}</p>;
 }
 
 export default Paragraph;
