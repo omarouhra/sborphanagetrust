@@ -1,7 +1,7 @@
 import type { SVGProps } from 'react';
 import React from 'react';
 
-export default function FacebookIcon(props: SVGProps<SVGSVGElement>) {
+export default function Facebook(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="20"

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function YoutubeIcon() {
+export default function Youtube() {
   return (
     <svg
       width="20"

@@ -2,8 +2,8 @@ import Link from 'next/link';
 import React from 'react';
 
 import CustomImage from '@/components/core/CustomImage';
-import FacebookIcon from '@/icons/footer/FacebookIcon';
-import YoutubeIcon from '@/icons/footer/YoutubeIcon';
+import Facebook from '@/icons/footer/facebook';
+import Youtube from '@/icons/footer/youtube';
 import Logo from '@/public/assets/Logo.png';
 import { BANK_ACCOUNT } from '@/utils/constants/bankAccount';
 import { FOOTER_MENU } from '@/utils/constants/footerMenu';
@@ -31,10 +31,10 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-2 text-white">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient">
-                <FacebookIcon />
+                <Facebook />
               </div>
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient">
-                <YoutubeIcon />
+                <Youtube />
               </div>
             </div>
           </div>
