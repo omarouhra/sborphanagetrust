@@ -4,13 +4,13 @@ import CustomImage from '@/components/core/CustomImage';
 import GradientContainer from '@/components/core/GradientContainer';
 import Heading from '@/components/core/Heading';
 import Paragraph from '@/components/core/Paragraph';
-import MainLayout from '@/components/layouts/MainLayout';
+import Wrapper from '@/components/layouts/Wrapper';
 import CharityIcon from '@/icons/home/CharityIcon';
 import aboutSB from '@/public/assets/home/aboutSB.png';
 
 export default function AboutSB() {
   return (
-    <MainLayout>
+    <Wrapper>
       <div className="mb-16 flex flex-col lg:flex-row lg:items-center lg:justify-between lg:space-x-7">
         <div className="w-full lg:max-w-xl">
           <div className="mb-8">
@@ -70,6 +70,6 @@ export default function AboutSB() {
           className="md:leading-8"
         />
       </GradientContainer>
-    </MainLayout>
+    </Wrapper>
   );
 }

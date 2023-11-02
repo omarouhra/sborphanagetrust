@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Heading from '@/components/core/Heading';
-import MainLayout from '@/components/layouts/MainLayout';
+import Wrapper from '@/components/layouts/Wrapper';
 import { STATICS } from '@/utils/constants/statics';
 
 import StaticItem from './core/StaticItem';
@@ -9,7 +9,7 @@ import StaticItem from './core/StaticItem';
 export default function Statics() {
   return (
     <section className="bg-gradient-to-r from-[#009174] to-[#52BD94]">
-      <MainLayout>
+      <Wrapper>
         <div className="text-white">
           <Heading
             text="Our Statics"
@@ -22,7 +22,7 @@ export default function Statics() {
             ))}
           </div>
         </div>
-      </MainLayout>
+      </Wrapper>
     </section>
   );
 }

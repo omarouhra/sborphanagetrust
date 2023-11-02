@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
   className?: string;
 };
-export default function MainLayout({ children, className }: Props) {
+export default function Wrapper({ children, className }: Props) {
   return (
     <section
       className={cx(

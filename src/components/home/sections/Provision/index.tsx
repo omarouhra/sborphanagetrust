@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Heading from '@/components/core/Heading';
-import MainLayout from '@/components/layouts/MainLayout';
+import Wrapper from '@/components/layouts/Wrapper';
 import { PROVISIONS } from '@/utils/constants/provisions';
 
 import ProvItem from './core/ProvItem';
 
 export default function Provision() {
   return (
-    <MainLayout>
+    <Wrapper>
       <div className="text-green-g1">
         <Heading
           text="Our Provision"
@@ -21,6 +21,6 @@ export default function Provision() {
           ))}
         </div>
       </div>
-    </MainLayout>
+    </Wrapper>
   );
 }

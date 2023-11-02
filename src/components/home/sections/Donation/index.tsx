@@ -2,7 +2,7 @@ import React from 'react';
 
 import Heading from '@/components/core/Heading';
 import Paragraph from '@/components/core/Paragraph';
-import MainLayout from '@/components/layouts/MainLayout';
+import Wrapper from '@/components/layouts/Wrapper';
 
 import DonationTable from './core/DonationTable';
 
@@ -56,7 +56,7 @@ const DONATION = [
 export default function Donation() {
   return (
     <section className="bg-gradient-to-b from-[#cbf1e9d5] to-[#a5b2af5d]">
-      <MainLayout>
+      <Wrapper>
         <div className="mb-12 flex flex-col items-center md:mb-28">
           <Heading
             text="Donation"
@@ -77,7 +77,7 @@ export default function Donation() {
             />
           ))}
         </div>
-      </MainLayout>
+      </Wrapper>
     </section>
   );
 }
