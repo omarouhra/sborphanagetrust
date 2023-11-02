@@ -13,9 +13,9 @@ import MainLayout from '../MainLayout';
 export default function Footer() {
   return (
     <section className="bg-white">
-      <MainLayout>
+      <MainLayout className="border-b-2 border-[#A6A6A659]">
         <p className="mb-8 text-2xl">Organisation</p>
-        <div className="flex flex-col space-y-10 md:flex-row md:items-start md:space-x-16 md:space-y-0">
+        <div className="flex flex-col space-y-10 md:flex-row md:items-start md:space-x-16 md:space-y-0 pb-10">
           <div className="w-full max-w-[457px] text-grey-g3">
             <div className="mb-4 w-[200px]">
               <CustomImage
@@ -68,6 +68,13 @@ export default function Footer() {
           </div>
         </div>
       </MainLayout>
+      <div className=" w-full flex items-center justify-center py-8 max-w-[1140px] mx-auto">
+        <p className="text-xs leading-normal text-grey-g3">
+          © 2020 SB Orphanage Trust. All rights reserved. SB Orphanage Trust is
+          a registered charity in UK | Charity No: 1147041 | Website Design by
+          2d Studio
+        </p>
+      </div>
     </section>
   );
 }
