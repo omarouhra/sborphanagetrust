@@ -31,8 +31,8 @@ function MenuItems({ items, pathname }: Props) {
       className={cx(
         'text-sm text-dark-d1 lg:text-base group font-semibold px-5 flex flex-nowrap py-2 rounded-3xl transition-all duration-200 ',
         pathname === items.link
-          ? 'bg-green-g1 bg-opacity-30'
-          : 'hover:bg-green-g1 hover:bg-opacity-30',
+          ? 'bg-green-600/10 bg-opacity-30'
+          : 'hover:bg-green-600/10 hover:bg-opacity-30',
       )}
     >
       {items.submenu ? (
