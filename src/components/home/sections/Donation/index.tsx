@@ -65,7 +65,7 @@ export default function Donation() {
           />
           <Paragraph
             text="All donations made via secure PayPal or UK bank transferfor direct debit please contact us via email."
-            className="max-w-lg text-center text-grey-g2"
+            className="max-w-lg text-center text-grey-2"
           />
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:gap-24">
