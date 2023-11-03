@@ -29,7 +29,7 @@ function MenuItems({ items, pathname }: Props) {
   return (
     <li
       className={cx(
-        'text-sm text-dark-d1 lg:text-base group font-semibold px-5 flex flex-nowrap py-2 rounded-3xl transition-all duration-200 ',
+        'text-sm text-dark-1 lg:text-base group font-semibold px-5 flex flex-nowrap py-2 rounded-3xl transition-all duration-200 ',
         pathname === items.link
           ? 'bg-green-600/10 bg-opacity-30'
           : 'hover:bg-green-600/10 hover:bg-opacity-30',
@@ -48,7 +48,7 @@ function MenuItems({ items, pathname }: Props) {
               'w-max text-transparent bg-clip-text',
               pathname === items.link
                 ? 'bg-gradient'
-                : 'group-hover:bg-gradient bg-dark-d1',
+                : 'group-hover:bg-gradient bg-dark-1',
             )}
           >
             {items.title}
@@ -64,7 +64,7 @@ function MenuItems({ items, pathname }: Props) {
               'w-max text-transparent bg-clip-text',
               pathname === items.link
                 ? 'bg-gradient'
-                : 'group-hover:bg-gradient bg-dark-d1',
+                : 'group-hover:bg-gradient bg-dark-1',
             )}
           >
             {items.title}

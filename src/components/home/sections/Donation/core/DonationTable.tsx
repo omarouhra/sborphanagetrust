@@ -25,9 +25,9 @@ const styles = {
     button: 'primary',
   },
   normal: {
-    title: 'text-dark-d1',
+    title: 'text-dark-1',
     text: 'text-grey-g1',
-    priceText: 'text-dark-d1',
+    priceText: 'text-dark-1',
     bgColor: 'bg-white',
     featBg: 'bg-[#F9FAFB]',
     button: 'secondary',
@@ -89,10 +89,10 @@ export default function DonationTable({
       >
         {features.map((feat, index: number) => (
           <div className="flex items-center space-x-3 py-3" key={index}>
-            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-green-g1 text-white">
+            <div className="bg-green-1 flex h-7 w-7 items-center justify-center rounded-full text-white">
               <CheckIcon />
             </div>
-            <p className="text-sm font-medium text-dark-d1">{feat}</p>
+            <p className="text-sm font-medium text-dark-1">{feat}</p>
           </div>
         ))}
         <div className="mt-7 flex w-full items-center justify-center">
