@@ -43,7 +43,13 @@ export default function Footer() {
             <div className="flex flex-col space-y-5">
               {FOOTER_MENU.map(({ link, name }, index: number) => (
                 <Link href={link} key={index}>
-                  <a className="text-sm text-grey-3">{name}</a>
+                  <a
+                    className={
+                      'text-sm bg-grey-3 w-max text-transparent bg-clip-text hover:bg-gradient transition duration-300'
+                    }
+                  >
+                    {name}
+                  </a>
                 </Link>
               ))}
             </div>
