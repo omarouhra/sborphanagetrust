@@ -1,14 +1,23 @@
+import Hamburger from 'hamburger-react';
 import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/router';
+import React, { useState } from 'react';
 
 import PhoneIcon from '@/icons/home/phoneIcon';
 import EmailIcon from '@/icons/share/emailIcon';
 import FacebookIcon from '@/icons/share/facebookIcon';
 import YoutubeIcon from '@/icons/share/youtubeIcon';
+import { menuItems } from '@/utils/constants/menuItems';
+import { cx } from '@/utils/cx';
+
+import MenuItems from './MenuItems';
 
 export default function NavBanner() {
+  const [isOpen, setOpen] = useState(false);
+  const { pathname } = useRouter();
+
   return (
-    <section className="bg-gradient">
+    <section className="flex items-start justify-between bg-gradient">
       <div className="mx-auto flex w-full max-w-[1140px] flex-col items-start space-y-2  px-3 py-5 text-white md:flex-row md:items-center md:justify-between md:space-x-3">
         <div className="flex items-center space-x-4">
           <YoutubeIcon />
@@ -31,6 +40,33 @@ export default function NavBanner() {
           </div>
         </div>
       </div>
+      <div
+        className={cx(
+          'block lg:hidden ',
+          isOpen ? 'fixed top-0 right-0 py-2 z-50 ' : 'py-5',
+        )}
+      >
+        <Hamburger
+          toggled={isOpen}
+          toggle={setOpen}
+          color={isOpen ? '#009174' : 'white'}
+          duration={0.5}
+        />
+      </div>
+      {isOpen && (
+        <div className="fixed top-0 z-20 h-screen w-full space-y-3 bg-white px-3 py-20">
+          {menuItems.map((menu, index) => {
+            return (
+              <MenuItems
+                items={menu}
+                key={index}
+                pathname={pathname}
+                className="justify-center"
+              />
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 }

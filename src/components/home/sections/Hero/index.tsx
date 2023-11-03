@@ -7,7 +7,7 @@ import HeartIcon from '@/icons/home/heartIcon';
 
 export default function Hero() {
   return (
-    <section className="flex h-screen flex-col items-center justify-center bg-[url('/assets/home/hero-bg.png')] bg-cover bg-no-repeat px-3 text-white">
+    <section className="flex h-[80vh] flex-col items-center justify-center bg-[url('/assets/home/hero-bg.png')] bg-cover bg-no-repeat px-3 text-white">
       <div className="w-full max-w-[800px] text-center">
         <Heading
           text="Empower Orphaned Children through Education and Hope"

@@ -1,6 +1,6 @@
 export const menuItems = [
   { title: 'Home', link: '/' },
-  { title: 'About us', link: '/about-us' },
+  { title: 'About us', link: '/about' },
   { title: 'Donate', link: '/donate' },
   {
     title: 'Gallery',

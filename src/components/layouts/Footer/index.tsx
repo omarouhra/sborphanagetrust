@@ -12,7 +12,7 @@ import Wrapper from '../Wrapper';
 
 export default function Footer() {
   return (
-    <section className="bg-white">
+    <footer className="bg-white">
       <Wrapper className="border-b-2 border-[#A6A6A659]">
         <p className="mb-8 text-2xl">Organisation</p>
         <div className="flex flex-col space-y-10 pb-10 md:flex-row md:items-start md:space-x-16 md:space-y-0">
@@ -45,7 +45,7 @@ export default function Footer() {
                 <Link href={link} key={index}>
                   <a
                     className={
-                      'text-sm bg-grey-3 w-max text-transparent bg-clip-text hover:bg-gradient transition duration-300'
+                      'w-max bg-grey-3 bg-clip-text text-sm text-transparent transition duration-300 hover:bg-gradient'
                     }
                   >
                     {name}
@@ -75,12 +75,12 @@ export default function Footer() {
         </div>
       </Wrapper>
       <div className=" mx-auto flex w-full max-w-[1140px] items-center justify-center py-8">
-        <p className="text-xs leading-normal text-grey-3">
+        <p className="px-3 text-xs leading-normal text-grey-3">
           © 2020 SB Orphanage Trust. All rights reserved. SB Orphanage Trust is
           a registered charity in UK | Charity No: 1147041 | Website Design by
           2d Studio
         </p>
       </div>
-    </section>
+    </footer>
   );
 }

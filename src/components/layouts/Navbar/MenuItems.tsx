@@ -15,8 +15,9 @@ type Props = {
     }[];
   };
   pathname: string;
+  className?: string;
 };
-function MenuItems({ items, pathname }: Props) {
+function MenuItems({ items, pathname, className }: Props) {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   const handleMouseEnter = () => {
@@ -33,6 +34,7 @@ function MenuItems({ items, pathname }: Props) {
         pathname === items.link
           ? 'bg-green-600/10 bg-opacity-30'
           : 'hover:bg-green-600/10 hover:bg-opacity-30',
+        className,
       )}
     >
       {items.submenu ? (
