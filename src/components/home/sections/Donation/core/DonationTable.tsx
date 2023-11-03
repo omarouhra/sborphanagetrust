@@ -89,7 +89,7 @@ export default function DonationTable({
       >
         {features.map((feat, index: number) => (
           <div className="flex items-center space-x-3 py-3" key={index}>
-            <div className="bg-green-1 flex h-7 w-7 items-center justify-center rounded-full text-white">
+            <div className="flex h-7 w-7 items-center justify-center rounded-full bg-green-1 text-white">
               <CheckIcon />
             </div>
             <p className="text-sm font-medium text-dark-1">{feat}</p>
