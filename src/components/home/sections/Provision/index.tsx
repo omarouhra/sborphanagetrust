@@ -9,7 +9,7 @@ import ProvItem from './core/ProvItem';
 export default function Provision() {
   return (
     <Wrapper>
-      <div className="text-green-g1">
+      <div className="text-green-1">
         <Heading
           text="Our Provision"
           className="mb-16 text-center font-bold"

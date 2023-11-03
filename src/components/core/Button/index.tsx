@@ -13,7 +13,7 @@ type Props = {
 
 const styles = {
   primary: 'text-white bg-gradient ',
-  secondary: 'bg-white text-green-g1 hover:bg-green-g1 hover:text-white',
+  secondary: 'bg-white text-green-1 hover:bg-green-1 hover:text-white',
 };
 
 export default function Button({

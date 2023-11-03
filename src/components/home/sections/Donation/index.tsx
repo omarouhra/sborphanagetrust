@@ -60,7 +60,7 @@ export default function Donation() {
         <div className="mb-12 flex flex-col items-center md:mb-28">
           <Heading
             text="Donation"
-            className="mb-4 text-center font-bold text-green-g1"
+            className="mb-4 text-center font-bold text-green-1"
             appearance="primary"
           />
           <Paragraph
