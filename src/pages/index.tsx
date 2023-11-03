@@ -10,7 +10,7 @@ import MainLayout from '@/components/layouts/MainLayout';
 const Home: NextPage = () => (
   <MainLayout>
     <Hero />
-    <div className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#a5b2af5d]">
+    <div className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
       <AboutSB />
       <Provision />
     </div>
