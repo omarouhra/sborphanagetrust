@@ -12,8 +12,8 @@ type Props = {
 };
 
 const styles = {
-  primary: 'text-base font-bold text-white bg-green-g1',
-  secondary: '',
+  primary: 'text-white bg-gradient ',
+  secondary: 'bg-white text-green-1 hover:bg-green-1 hover:text-white',
 };
 
 export default function Button({
@@ -28,7 +28,8 @@ export default function Button({
   return (
     <button
       className={cx(
-        'rounded-full px-8 py-3 inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap',
+        'rounded-full text-base font-semibold px-8 py-3 inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap',
+        'transition-all ease-in-out duration-300',
         styles[appearance],
         className,
       )}
@@ -36,7 +37,7 @@ export default function Button({
       {...props}
     >
       {label}
-      {icon && <div className="ml-2 w-4">{icon}</div>}
+      {icon && <div className="ml-3 w-4">{icon}</div>}
       {children}
     </button>
   );
