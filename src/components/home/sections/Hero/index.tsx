@@ -18,7 +18,11 @@ export default function Hero() {
           className="mb-8"
         />
       </div>
-      <Button icon={<HeartIcon />} label="Donate Now" />
+      <Button
+        icon={<HeartIcon />}
+        label="Donate Now"
+        className="duration-200 hover:opacity-90"
+      />
     </section>
   );
 }
