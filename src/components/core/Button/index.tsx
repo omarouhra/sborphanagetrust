@@ -28,7 +28,7 @@ export default function Button({
   return (
     <button
       className={cx(
-        'rounded-full text-base font-bold px-8 hover:bggradno py-3 inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap',
+        'rounded-full text-base font-semibold px-8 py-3 inline-flex items-center justify-center flex-shrink-0 whitespace-nowrap',
         'transition-all ease-in-out duration-300',
         styles[appearance],
         className,
@@ -37,7 +37,7 @@ export default function Button({
       {...props}
     >
       {label}
-      {icon && <div className="ml-2 w-4">{icon}</div>}
+      {icon && <div className="ml-3 w-4">{icon}</div>}
       {children}
     </button>
   );
