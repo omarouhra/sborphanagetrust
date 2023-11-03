@@ -10,8 +10,8 @@ type Props = {
 
 const styles = {
   hero: 'text-base md:text-xl md:leading-normal',
-  primary: 'text-lg',
-  subText: 'text-base md:leading-7',
+  primary: 'text-base md:text-lg',
+  subText: 'text-sm md:text-base md:leading-7',
   lightText: 'text-lg font-light md:leading-6',
 };
 
