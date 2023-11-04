@@ -9,6 +9,7 @@ type Props = {
   label: string;
   icon?: React.ReactNode;
   disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset' | undefined;
 };
 
 const styles = {
@@ -22,6 +23,7 @@ export default function Button({
   className,
   label,
   icon,
+  type,
   disabled,
   ...props
 }: Props) {
@@ -34,6 +36,7 @@ export default function Button({
         className,
       )}
       disabled={disabled}
+      type={type}
       {...props}
     >
       {label}
