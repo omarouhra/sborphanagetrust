@@ -16,6 +16,6 @@ export const menuItems = [
       },
     ],
   },
-  { title: 'Sponsored a Child', link: '/sponsored' },
+  { title: 'Sponsored a Child', link: '/sponsor' },
   { title: 'Contact us', link: '/contact-us' },
 ];
