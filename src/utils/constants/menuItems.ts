@@ -4,17 +4,7 @@ export const menuItems = [
   { title: 'Donate', link: '/donate' },
   {
     title: 'Gallery',
-    link: 'Gallery',
-    submenu: [
-      {
-        title: 'Photo gallery',
-        link: '/gallery',
-      },
-      {
-        title: 'Video Gallery',
-        link: '/video-gallery',
-      },
-    ],
+    link: '/gallery',
   },
   { title: 'Sponsored a Child', link: '/sponsored' },
   { title: 'Contact us', link: '/contact-us' },
