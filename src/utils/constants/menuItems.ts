@@ -7,5 +7,4 @@ export const menuItems = [
     link: '/gallery',
   },
   { title: 'Sponsored a Child', link: '/sponsor' },
-  { title: 'Contact us', link: '/contact-us' },
-];
+  { title: 'Contact us', link: '/contact' },
