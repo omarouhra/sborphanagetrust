@@ -10,7 +10,6 @@ type Props = InputHTMLAttributes<HTMLInputElement> & {
 };
 export const Input = forwardRef<HTMLInputElement, Props>(
   ({ placeholder, className, error, ...props }, ref) => {
-    console.log(error);
     return (
       <div>
         <input
