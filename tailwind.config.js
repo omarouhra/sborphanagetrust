@@ -26,6 +26,9 @@ module.exports = {
       backgroundImage: {
         gradient: 'linear-gradient(101deg, #009174 20.94%, #52BD94 100%)',
       },
+      boxShadow: {
+        'inner-grey': '0px 4px 8px 0px rgba(0, 0, 0, 0.16) inset',
+      },
     },
   },
   plugins: [],
