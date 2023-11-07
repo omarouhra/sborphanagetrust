@@ -6,11 +6,11 @@ const NextSeo = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://sborphanagetrust.co.uk/',
+    url: 'https://sborphanagetrust.vercel.app/',
     site_name: 'sborphanagetrust',
     images: [
       {
-        url: 'https://www.obytes.com/assets/obytes_og_image.png',
+        url: 'https://sborphanagetrust.vercel.app/assets/og-image.png',
         height: 1920,
         width: 1920,
       },
