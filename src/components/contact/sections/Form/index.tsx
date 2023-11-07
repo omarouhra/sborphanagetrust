@@ -80,7 +80,7 @@ export default function Form() {
                       htmlFor=""
                       className="mb-1 block text-sm font-medium text-dark-1"
                     >
-                      First Name
+                      First Name *
                     </label>
                     <Input
                       placeholder="Enter your first name"
@@ -98,7 +98,7 @@ export default function Form() {
                       htmlFor=""
                       className="mb-1 block text-sm font-medium text-dark-1"
                     >
-                      Last Name
+                      Last Name *
                     </label>
                     <Input
                       placeholder="Enter your last name"
@@ -118,7 +118,7 @@ export default function Form() {
                       htmlFor=""
                       className="mb-1 block text-sm font-medium text-dark-1"
                     >
-                      Email
+                      Email *
                     </label>
                     <Input
                       placeholder="Enter your email"
@@ -146,10 +146,6 @@ export default function Form() {
                     <Input
                       placeholder="Enter your phone number"
                       {...register('phone', {
-                        required: {
-                          value: true,
-                          message: 'This field is required',
-                        },
                         pattern: {
                           value: /^(\+\d{1,})?$|^(\d|\s|\(|\))*$/,
                           message: 'Invalid phone number format',
@@ -165,7 +161,7 @@ export default function Form() {
                     htmlFor=""
                     className="mb-1 block text-sm font-medium text-dark-1"
                   >
-                    Message
+                    Message *
                   </label>
                   <Textarea
                     placeholder="Write your message.."
