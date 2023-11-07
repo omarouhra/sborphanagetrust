@@ -11,6 +11,7 @@ import FacebookIcon from '@/icons/share/facebookIcon';
 import YoutubeIcon from '@/icons/share/youtubeIcon';
 
 import { Input } from './core/Input';
+import { Textarea } from './core/Textarea';
 
 type TForm = {
   first_name: string;
@@ -20,7 +21,11 @@ type TForm = {
   message: string;
 };
 export default function Form() {
-  const { register, handleSubmit } = useForm<TForm>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<TForm>();
 
   const onSubmit = (data: TForm) => {
     console.log(data);
@@ -29,16 +34,16 @@ export default function Form() {
     <section className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
       <Wrapper>
         <div>
-          <p className="mb-16 text-center text-xl font-bold leading-normal text-green-1 md:text-3xl">
+          <p className="mb-16 text-center text-4xl font-bold leading-normal text-green-1 md:text-3xl">
             We’d love to hear from you
           </p>
           <div className="flex flex-col space-y-4 rounded-2xl bg-white px-2 py-3 md:flex-row md:items-start md:justify-between md:space-x-3 md:space-y-0 md:p-4">
             <GradientContainer className="nd:w-[400px] flex flex-col items-start justify-between space-y-5 rounded-md py-8 md:h-[490px]">
               <div>
-                <p className="mb-8 text-start text-lg font-medium leading-normal md:mb-16 md:text-2xl">
+                <p className="mb-8 text-start text-3xl font-medium leading-normal md:mb-16 md:text-2xl">
                   Contact Information
                 </p>
-                <div className="flex flex-col items-start space-y-4 text-sm">
+                <div className="flex flex-col items-start space-y-4 text-lg">
                   <div className="flex items-center space-x-2">
                     <EmailIcon />
                     <Link href="mailto:info@sborphanagetrust.co.uk">
@@ -81,10 +86,11 @@ export default function Form() {
                       placeholder="Enter your first name"
                       {...register('first_name', {
                         required: {
-                          value: false,
-                          message: 'Please fill this field',
+                          value: true,
+                          message: 'This field is required',
                         },
                       })}
+                      error={errors.first_name?.message}
                     />
                   </div>
                   <div className="lg:w-1/2">
@@ -98,10 +104,11 @@ export default function Form() {
                       placeholder="Enter your last name"
                       {...register('last_name', {
                         required: {
-                          value: false,
-                          message: 'Please fill this field',
+                          value: true,
+                          message: 'This field is required',
                         },
                       })}
+                      error={errors.last_name?.message}
                     />
                   </div>
                 </div>
@@ -117,10 +124,16 @@ export default function Form() {
                       placeholder="Enter your email"
                       {...register('email', {
                         required: {
-                          value: false,
-                          message: 'Please fill this field',
+                          value: true,
+                          message: 'This field is required',
+                        },
+                        pattern: {
+                          value:
+                            /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                          message: 'Invalid email address',
                         },
                       })}
+                      error={errors.email?.message}
                     />
                   </div>
                   <div className="lg:w-1/2">
@@ -134,10 +147,16 @@ export default function Form() {
                       placeholder="Enter your phone number"
                       {...register('phone', {
                         required: {
-                          value: false,
-                          message: 'Please fill this field',
+                          value: true,
+                          message: 'This field is required',
+                        },
+                        pattern: {
+                          value: /^(\+\d{1,})?$|^(\d|\s|\(|\))*$/,
+                          message: 'Invalid phone number format',
                         },
                       })}
+                      type="tel"
+                      error={errors.phone?.message}
                     />
                   </div>
                 </div>
@@ -148,14 +167,15 @@ export default function Form() {
                   >
                     Message
                   </label>
-                  <Input
+                  <Textarea
                     placeholder="Write your message.."
                     {...register('message', {
                       required: {
-                        value: false,
-                        message: 'Please fill this field',
+                        value: true,
+                        message: 'This field is required',
                       },
                     })}
+                    error={errors.message?.message}
                   />
                 </div>
                 <div className="flex w-full md:justify-end">
