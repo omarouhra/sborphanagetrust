@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
 
-import CustomImage from '@/components/core/CustomImage';
 import Facebook from '@/icons/footer/facebook';
 import Youtube from '@/icons/footer/youtube';
-import Logo from '@/public/assets/Logo.png';
+import LogoIcon from '@/icons/home/LogoIcon';
+// import Logo from '@/public/assets/SB_Orphanage_Trust.svg';
 import { BANK_ACCOUNT } from '@/utils/constants/bankAccount';
 import { FOOTER_MENU } from '@/utils/constants/footerMenu';
 
@@ -18,12 +18,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-10 pb-10 md:flex-row md:items-start md:space-x-16 md:space-y-0">
           <div className="w-full max-w-[457px] text-grey-3">
             <div className="mb-4 w-[200px]">
-              <CustomImage
-                alt="sbo-log"
-                src={Logo}
-                isBlurring={false}
-                priority
-              />
+              <LogoIcon />
             </div>
             <p className="mb-5  text-sm md:leading-6">
               Is dedicated to improving the welfare of children who have become

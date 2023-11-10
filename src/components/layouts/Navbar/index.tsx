@@ -2,8 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import CustomImage from '@/components/core/CustomImage';
-import Logo from '@/public/assets/Logo.png';
+import LogoIcon from '@/icons/home/LogoIcon';
 import { menuItems } from '@/utils/constants/menuItems';
 import { cx } from '@/utils/cx';
 
@@ -27,12 +26,7 @@ export default function Navbar() {
              * TODO:change Logo to SVG
              */}
             <Link href="/" aria-label="Home">
-              <CustomImage
-                alt="sbo-log"
-                src={Logo}
-                isBlurring={false}
-                priority
-              />
+              <LogoIcon />
             </Link>
           </div>
 
