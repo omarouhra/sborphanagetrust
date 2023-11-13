@@ -9,3 +9,155 @@ li {
 textarea {
   resize: none;
 }
+
+.prose .tweet a {
+  text-decoration: inherit;
+  font-weight: inherit;
+}
+
+table {
+  @apply w-full mt-4;
+}
+
+tbody {
+  @apply bg-white rounded-lg w-full;
+}
+
+thead {
+  @apply text-xs  text-grey-2 uppercase bg-[#F0F0F0] w-full;
+}
+
+th:first-child {
+  @apply rounded-tl-lg;
+}
+
+th:last-child {
+  @apply rounded-tr-lg;
+}
+
+table tr:last-child td:first-child {
+  @apply rounded-bl-lg;
+}
+table tr:last-child td:last-child {
+  @apply rounded-br-lg;
+}
+
+table th {
+  @apply border-r border-gray-200;
+}
+table th:last-child {
+  @apply border-none;
+}
+
+tbody tr:last-child td {
+  @apply border-b-0;
+}
+table td {
+  @apply border-r border-b border-gray-200;
+}
+
+table td:last-child {
+  @apply border-r-0;
+}
+
+table th,
+td {
+  @apply py-4 text-start px-2 w-max;
+}
+
+tbody td:first-child {
+  @apply w-[25%];
+}
+
+tbody td:last-child {
+  @apply w-[55%];
+}
+
+.prose .callout > p {
+  margin: 0 !important;
+}
+
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  scroll-margin-top: 100px;
+}
+
+.prose h1 {
+  font-weight: 800;
+  font-size: 2.25em;
+  margin-top: 0.8888889em;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+.prose h2 {
+  font-weight: 600;
+  font-size: 1.75em;
+  margin-top: 0.8888889em;
+  margin-bottom: 0.8888889em;
+  line-height: 1.1111111;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.rehype-code-title + pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.highlight-line {
+  @apply block px-4 -mx-4 border-l-4 border-blue-500;
+}
+
+.prose .anchor {
+  @apply absolute invisible no-underline;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible;
+}
+
+.prose a {
+  @apply transition-all;
+}
+
+.prose .anchor:after {
+  @apply text-grey-1;
+  content: '#';
+}
+
+.prose *:hover > .anchor {
+  @apply visible;
+}
+
+.prose pre {
+  @apply border border-gray-200 bg-gray-100;
+}
+
+.prose p {
+  @apply text-base mb-1;
+}
+
+.prose a {
+  @apply text-base font-medium text-gray-700 underline underline-offset-2;
+}
+
+.prose li {
+  list-style-type: disc;
+}
+
+.prose ul {
+  padding: 0px 30px;
+  margin-bottom: 3px;
+}
