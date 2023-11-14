@@ -11,7 +11,7 @@ export default function SbilingIcon(props: SVGProps<SVGSVGElement>) {
       fill="none"
       {...props}
     >
-      <g clip-path="url(#clip0_112_2483)">
+      <g clipPath="url(#clip0_112_2483)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
