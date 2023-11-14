@@ -20,7 +20,7 @@ export default function Privacy() {
             style={{ wordBreak: 'break-word' }}
           >
             <div
-              className="w-full justify-between  px-5"
+              className="w-full justify-between  md:px-5"
               style={{ wordBreak: 'break-word' }}
             >
               <Component />

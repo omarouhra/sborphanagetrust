@@ -16,7 +16,12 @@ textarea {
 }
 
 table {
-  @apply w-full mt-4;
+  /* display: block;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap; */
+
+  @apply block max-w-fit lg:w-full overflow-x-auto whitespace-nowrap lg:whitespace-normal;
 }
 
 tbody {
@@ -86,19 +91,21 @@ tbody td:last-child {
 }
 
 .prose h1 {
-  font-weight: 800;
+  /* font-weight: 800;
   font-size: 2.25em;
   margin-top: 0.8888889em;
   margin-bottom: 0.8888889em;
-  line-height: 1.1111111;
+  line-height: 1.1111111; */
+  @apply font-extrabold text-3xl md:text-4xl my-2 md:my-4 md:leading-7;
 }
 
 .prose h2 {
-  font-weight: 600;
+  /* font-weight: 600;
   font-size: 1.75em;
   margin-top: 0.8888889em;
   margin-bottom: 0.8888889em;
-  line-height: 1.1111111;
+  line-height: 1.1111111; */
+  @apply font-extrabold text-2xl md:text-3xl my-2 md:my-4 md:leading-5;
 }
 
 pre {
