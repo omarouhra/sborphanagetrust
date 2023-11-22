@@ -42,7 +42,7 @@ export default function NavBanner() {
       </div>
       <div
         className={cx(
-          'block lg:hidden ',
+          'block md:hidden ',
           isOpen ? 'fixed top-0 right-0 py-2 z-50 ' : 'py-5',
         )}
       >
