@@ -10,18 +10,16 @@ import MainLayout from '@/components/layouts/MainLayout';
 import { baseURL } from '@/utils/constants/baseUrl';
 
 const Home: NextPage = () => (
-  <>
+  <div className="z-20 bg-[url('/assets/global-mask.png')] bg-cover bg-no-repeat">
     <NextSeo title="Home" canonical={baseURL} />
-    <MainLayout>
+    <MainLayout className="relative z-20">
       <Hero />
-      <div className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
-        <AboutSB />
-        <Provision />
-      </div>
+      <AboutSB />
+      <Provision />
       <Statics />
       <Donation />
     </MainLayout>
-  </>
+  </div>
 );
 
 export default Home;
