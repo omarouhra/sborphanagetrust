@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <section className="w-full">
       <NavBanner />
-      <div className="bg-green-2">
+      <div>
         <header
           className={cx(
             'flex w-full items-center justify-between  py-5 max-w-[1140px]  mx-auto',
