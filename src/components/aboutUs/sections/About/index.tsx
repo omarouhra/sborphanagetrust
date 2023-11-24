@@ -8,7 +8,7 @@ import AhsanAhmad from '@/public/assets/aboutus/ahsan-ahmad.png';
 
 export default function About() {
   return (
-    <section className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
+    <section>
       <Wrapper>
         <div className="mb-16 flex flex-col space-y-96  md:space-y-10 lg:flex-row lg:items-start lg:justify-between lg:space-x-10 lg:space-y-0">
           <div className="relative mt-3">

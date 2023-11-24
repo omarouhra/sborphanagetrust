@@ -31,7 +31,7 @@ export default function Form() {
     console.log(data);
   };
   return (
-    <section className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
+    <section>
       <Wrapper>
         <div>
           <p className="mb-16 text-center text-4xl font-bold leading-normal text-green-1 md:text-3xl">
