@@ -8,13 +8,13 @@ import { baseURL } from '@/utils/constants/baseUrl';
 
 function donate() {
   return (
-    <>
+    <div className="z-20 bg-[url('/assets/global-mask.png')] bg-cover bg-no-repeat">
       <NextSeo title="Donate" canonical={`${baseURL}/donate`} />
       <MainLayout>
         <Hero />
         <Donations />
       </MainLayout>
-    </>
+    </div>
   );
 }
 

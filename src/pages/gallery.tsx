@@ -8,12 +8,12 @@ import { baseURL } from '@/utils/constants/baseUrl';
 
 export default function gallery() {
   return (
-    <>
+    <div className="z-20 bg-[url('/assets/global-mask.png')] bg-cover bg-no-repeat">
       <NextSeo title="Gallery" canonical={`${baseURL}/gallery`} />
       <MainLayout>
         <Hero />
         <Galleries />
       </MainLayout>
-    </>
+    </div>
   );
 }

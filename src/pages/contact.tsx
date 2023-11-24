@@ -8,13 +8,13 @@ import { baseURL } from '@/utils/constants/baseUrl';
 
 function contact() {
   return (
-    <>
+    <div className="z-20 bg-[url('/assets/global-mask.png')] bg-cover bg-no-repeat">
       <NextSeo title="Contact" canonical={`${baseURL}/contact`} />
       <MainLayout>
         <Hero />
         <Form />
       </MainLayout>
-    </>
+    </div>
   );
 }
 
