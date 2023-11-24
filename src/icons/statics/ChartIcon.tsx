@@ -11,7 +11,7 @@ export default function ChartIcon(props: SVGProps<SVGSVGElement>) {
       fill="none"
       {...props}
     >
-      <g clip-path="url(#clip0_112_1216)">
+      <g clipPath="url(#clip0_112_1216)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
