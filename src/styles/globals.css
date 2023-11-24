@@ -9,3 +9,7 @@ li {
 textarea {
   resize: none;
 }
+
+span {
+  position: static !important;
+}

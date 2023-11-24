@@ -30,7 +30,7 @@ function CustomImage({
         className,
         'duration-500 ease-in-out object-cover',
         isLoading && isBlurring
-          ? 'scale-110 blur-2xl grayscale'
+          ? 'scale-100 blur-xl grayscale'
           : 'scale-100 blur-0 grayscale-0',
       )}
       onLoadingComplete={() => setLoading(false)}
