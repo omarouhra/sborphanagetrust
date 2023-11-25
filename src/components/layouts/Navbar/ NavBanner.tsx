@@ -1,8 +1,10 @@
-import Hamburger from 'hamburger-react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
+import Button from '@/components/core/Button';
+import CloseIcon from '@/icons/home/CloseIcon';
+import HamburgerMenuIcon from '@/icons/home/HamburgerMenuIcon';
 import PhoneIcon from '@/icons/home/phoneIcon';
 import EmailIcon from '@/icons/share/emailIcon';
 import FacebookIcon from '@/icons/share/facebookIcon';
@@ -46,15 +48,32 @@ export default function NavBanner() {
           isOpen ? 'fixed top-0 right-0 py-2 z-50 ' : 'py-5',
         )}
       >
-        <Hamburger
+        {/* <Hamburger
           toggled={isOpen}
           toggle={setOpen}
           color={isOpen ? '#009174' : 'white'}
           duration={0.5}
-        />
+        /> */}
+        <Button
+          appearance="toggleNavigation"
+          onClick={() => setOpen(!isOpen)}
+          className="overflow-hidden"
+        >
+          <div
+            aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+            className={
+              isOpen
+                ? 'flex -translate-y-4 flex-col  translate-x-1.5 space-y-6 text-green-1 transition duration-500 ease-in-out '
+                : 'flex translate-y-9 flex-col space-y-6 text-white transition duration-500  ease-in-out'
+            }
+          >
+            <HamburgerMenuIcon />
+            <CloseIcon />
+          </div>
+        </Button>
       </div>
       {isOpen && (
-        <div className="fixed top-0 z-20 h-screen w-full space-y-3 bg-white px-3 py-20">
+        <div className="fixed top-0 z-20 h-screen w-full space-y-3 overflow-hidden bg-white px-3 py-20">
           {menuItems.map((menu, index) => {
             return (
               <MenuItems
