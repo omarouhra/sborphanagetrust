@@ -1,12 +1,13 @@
+import type { HTMLProps } from 'react';
 import React from 'react';
 
 import { cx } from '@/utils/cx';
 
-type Props = {
+type Props = HTMLProps<HTMLButtonElement> & {
   children?: React.ReactNode;
-  appearance?: 'primary' | 'secondary';
+  appearance?: 'primary' | 'secondary' | 'toggleNavigation';
   className?: string;
-  label: string;
+  label?: string;
   icon?: React.ReactNode;
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset' | undefined;
@@ -15,6 +16,8 @@ type Props = {
 const styles = {
   primary: 'text-white bg-gradient ',
   secondary: 'bg-white text-green-1 hover:bg-green-1 hover:text-white',
+  toggleNavigation:
+    'ml-ten flex h-11 w-11 items-center justify-center rounded-full lg:hidden',
 };
 
 export default function Button({
