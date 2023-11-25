@@ -9,7 +9,7 @@ export default function HamburgerMenuIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 24 24"
       strokeWidth="2"
       stroke="currentColor"
-      className="w-9 h-9"
+      className="h-9 w-9"
       {...props}
     >
       <path

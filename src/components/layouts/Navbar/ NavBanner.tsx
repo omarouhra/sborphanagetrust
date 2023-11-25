@@ -63,8 +63,8 @@ export default function NavBanner() {
             aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
             className={
               isOpen
-                ? 'flex -translate-y-4 flex-col md:-translate-y-5   translate-x-1.5 space-y-6 text-green-1 transition duration-500 ease-in-out '
-                : 'flex translate-y-9 md:translate-y-5 flex-col space-y-6 text-white transition duration-500  ease-in-out'
+                ? 'flex -translate-y-4 translate-x-1.5 flex-col   space-y-6 text-green-1 transition duration-500 ease-in-out md:-translate-y-5 '
+                : 'flex translate-y-9 flex-col space-y-6 text-white transition duration-500 ease-in-out  md:translate-y-5'
             }
           >
             <HamburgerMenuIcon />
