@@ -20,9 +20,13 @@ export default function HeroLayout({ heroBg, children, className }: Props) {
       >
         <div className="relative h-[500px]">
           <div className="relative h-full">
-            <CustomImage src={heroBg} alt="hero" className="md:rounded-lg" />
+            <CustomImage
+              src={heroBg}
+              alt="hero"
+              className="md:rounded-lg"
+              isOverlay
+            />
           </div>
-          <div className="absolute inset-0 rounded-lg bg-gradient-to-b from-[#0000007d] to-[#0000007d]" />
           <div className="absolute inset-0 flex h-full w-full flex-col items-start justify-end p-8">
             {children}
           </div>
