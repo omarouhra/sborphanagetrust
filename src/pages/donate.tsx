@@ -3,18 +3,19 @@ import React from 'react';
 
 import Donations from '@/components/donate/sections/Donations';
 import Hero from '@/components/donate/sections/Hero';
+import GlobalLayout from '@/components/layouts/GlobalLayout';
 import MainLayout from '@/components/layouts/MainLayout';
 import { baseURL } from '@/utils/constants/baseUrl';
 
 function donate() {
   return (
-    <div className="z-20 bg-[url('/assets/global-mask.png')] bg-cover bg-no-repeat">
+    <GlobalLayout>
       <NextSeo title="Donate" canonical={`${baseURL}/donate`} />
-      <MainLayout>
+      <MainLayout className="relative z-30">
         <Hero />
         <Donations />
       </MainLayout>
-    </div>
+    </GlobalLayout>
   );
 }
 
