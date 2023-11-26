@@ -11,6 +11,7 @@ type Props = {
   priority?: boolean;
   isBlurring?: boolean;
   isOverlay?: boolean;
+  layout?: 'fill';
 };
 
 function CustomImage({
@@ -20,6 +21,7 @@ function CustomImage({
   priority,
   isBlurring = true,
   isOverlay = false,
+  layout,
 }: Props) {
   const [isLoading, setLoading] = useState(true);
 
@@ -37,6 +39,7 @@ function CustomImage({
             : 'scale-100 blur-0 grayscale-0',
         )}
         onLoadingComplete={() => setLoading(false)}
+        layout={layout}
       />
       {isOverlay && !isLoading && (
         <div className="absolute inset-0 rounded-lg bg-gradient-to-b from-[#0000007d] to-[#0000007d]" />
