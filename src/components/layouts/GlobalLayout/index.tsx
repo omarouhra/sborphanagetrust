@@ -10,7 +10,7 @@ export default function GlobalLayout({ children }: Props) {
   return (
     <div className="relative w-full">
       {children}
-      <div className="absolute inset-0  h-full w-full">
+      <div className="absolute inset-0 w-full">
         <CustomImage src={globalMask} alt="globalmask" isBlurring={false} />
       </div>
     </div>
