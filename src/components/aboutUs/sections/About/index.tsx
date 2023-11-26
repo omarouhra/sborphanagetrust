@@ -10,10 +10,10 @@ export default function About() {
   return (
     <section>
       <Wrapper>
-        <div className="mb-16 flex flex-col space-y-96  md:space-y-10 lg:flex-row lg:items-start lg:justify-between lg:space-x-10 lg:space-y-0">
+        <div className="mb-16 flex flex-col space-y-6 md:space-y-10 lg:flex-row lg:items-start lg:justify-between lg:space-x-10 lg:space-y-0">
           <div className="relative mt-3">
-            <div className="hidden rounded-2xl border-2 border-green-1/50 md:ml-20  md:flex md:h-[430px] md:w-[490px]  lg:ml-0 lg:h-[681px] lg:w-[545px]" />
-            <div className="absolute z-30 mb-8 flex justify-end md:absolute md:-bottom-16 md:left-28 md:mb-20 md:h-[430px] md:w-[490px] lg:-right-0 lg:bottom-3  lg:left-4 lg:mb-0 lg:h-[681px] lg:w-[545px]">
+            <div className="hidden rounded-2xl border-2 border-green-1/50 lg:flex lg:ml-0 lg:h-[681px] lg:w-[545px]" />
+            <div className="z-30 mb-8 flex justify-end lg:absolute  lg:-right-0 lg:bottom-3  lg:left-4 lg:mb-0 lg:h-[681px] lg:w-[545px]">
               <CustomImage
                 src={AhsanAhmad}
                 alt="ahmad-ahsann"
@@ -79,7 +79,7 @@ export default function About() {
               Bangladeshi orphans are deprived of. With your generous donations,
               we can take care of the orphans at SB Orphanage.”
             </p>
-            <p className="flex w-full justify-end text-justify text-sm font-medium uppercase	tracking-wide md:text-base md:leading-normal">
+            <p className="flex w-full justify-end text-justify text-sm font-medium uppercase px-1	tracking-wide md:text-base md:leading-normal">
               - Mufti Ahsan Ahmed
             </p>
           </div>
