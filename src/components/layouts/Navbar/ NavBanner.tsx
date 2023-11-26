@@ -50,9 +50,8 @@ export default function NavBanner() {
             <Link href="tel:07903106037">
               <div className="flex cursor-pointer  items-center space-x-2 ">
                 <p className="flex  items-center space-x-1">
-                  (
                   <UKIcon />
-                  <span>+44</span> )
+                  <span>+44</span>
                 </p>
                 <span> 790 310 6037</span>
               </div>
