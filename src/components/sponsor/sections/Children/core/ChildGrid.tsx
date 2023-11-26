@@ -5,23 +5,22 @@ import CustomImage from '@/components/core/CustomImage';
 import BirthIcon from '@/icons/sponsor/BirthIcon';
 import CalendarIcon from '@/icons/sponsor/CalendarIcon';
 import SbilingIcon from '@/icons/sponsor/SbilingIcon';
+import { cx } from '@/utils/cx';
 
 type Props = {
-  src: string | StaticImageData;
+  id: number;
+  image: string | StaticImageData;
   name: string;
-  dateOfBirth: string;
-  siblings: {
-    sisters: number;
-    brothers: number;
-  };
-  admiDate: string;
+  dateOfBirth?: string | undefined;
+  siblings?: string | undefined;
+  admissionDate?: string | undefined;
 };
 export default function ChildGrid({
-  src,
+  image,
   name,
   dateOfBirth,
   siblings,
-  admiDate,
+  admissionDate,
 }: Props) {
   return (
     <div className="relative">
@@ -31,35 +30,48 @@ export default function ChildGrid({
             {name}
           </p>
           <div className="flex flex-col space-y-4 text-sm leading-normal text-dark-1">
-            <div className="flex flex-nowrap items-center space-x-2">
+            <div
+              className={cx(
+                'flex flex-nowrap items-center space-x-2',
+                dateOfBirth ? 'opacity-100' : 'opacity-0 select-none',
+              )}
+            >
               <BirthIcon />
               <p>
                 Date of Birth: <span>{dateOfBirth}</span>
               </p>
             </div>
-            <div className="flex flex-nowrap items-center space-x-2">
+            <div
+              className={cx(
+                'flex flex-nowrap items-center space-x-2',
+                siblings ? 'opacity-100' : 'opacity-0 select-none',
+              )}
+            >
               <SbilingIcon />
-              <p>
-                Siblings: <span>{siblings.brothers}</span> Brothers,
-                <span>{siblings.sisters}</span> Sisters
-              </p>
+              <p>Siblings: {siblings}</p>
             </div>
-            <div className="flex flex-nowrap items-center space-x-2">
+            <div
+              className={cx(
+                'flex flex-nowrap items-center space-x-2',
+                admissionDate ? 'opacity-100' : 'opacity-0 select-none',
+              )}
+            >
               <CalendarIcon />
               <p>
-                Admission Date: <span>{admiDate}</span>
+                Admission Date: <span>{admissionDate}</span>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute -top-20 left-12 h-52 w-52 rounded-full">
+      <div className="absolute -top-24 left-11 h-52 w-52 rounded-full">
         <CustomImage
-          src={src}
+          src={image}
           alt={`${name}-child`}
           priority
           isBlurring
           className="rounded-full"
+          layout="fill"
         />
       </div>
     </div>
