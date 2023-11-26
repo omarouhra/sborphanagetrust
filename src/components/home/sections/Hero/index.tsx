@@ -20,11 +20,18 @@ export default function Hero() {
           className="mb-4"
         />
       </div>
-      <Button
-        icon={<HeartIcon />}
-        label="Donate Now"
-        className="duration-200 hover:opacity-90"
-      />
+      <Button className="duration-200 hover:opacity-90">
+        <a
+          href="https://www.paypal.com/paypalme/sborphanage"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate Now
+        </a>
+        <div className="ml-3 w-4">
+          <HeartIcon />
+        </div>
+      </Button>
     </HeroLayout>
   );
 }
