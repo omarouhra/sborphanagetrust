@@ -26,7 +26,7 @@ export default function BirthIcon(props: SVGProps<SVGSVGElement>) {
           y2="2.69376"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#009174" />
+          <stop stopColor="#009174" />
           <stop offset="1" stopColor="#52BD94" />
         </linearGradient>
         <clipPath id="clip0_112_2479">
