@@ -6,6 +6,7 @@ import Button from '@/components/core/Button';
 import CloseIcon from '@/icons/home/CloseIcon';
 import HamburgerMenuIcon from '@/icons/home/HamburgerMenuIcon';
 import PhoneIcon from '@/icons/home/phoneIcon';
+import UKIcon from '@/icons/home/UKIcon';
 import EmailIcon from '@/icons/share/emailIcon';
 import FacebookIcon from '@/icons/share/facebookIcon';
 import YoutubeIcon from '@/icons/share/youtubeIcon';
@@ -22,8 +23,18 @@ export default function NavBanner() {
     <section className="flex items-start justify-between bg-gradient">
       <div className="mx-auto flex w-full max-w-[1140px] flex-col items-start space-y-2  px-3 py-5 text-white md:flex-row md:items-center md:justify-between md:space-x-3">
         <div className="flex items-center space-x-4">
-          <YoutubeIcon />
-          <FacebookIcon />
+          <Link
+            href={'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'}
+          >
+            <a target="_blank">
+              <YoutubeIcon />
+            </a>
+          </Link>
+          <Link href={'https://www.facebook.com/rukyahijama1'}>
+            <a target="_blank">
+              <FacebookIcon />
+            </a>
+          </Link>
         </div>
         <div className="flex flex-col items-start space-y-2 text-sm md:flex-row md:items-center md:space-x-8 md:space-y-0">
           <div className="flex items-center space-x-2">
@@ -37,7 +48,14 @@ export default function NavBanner() {
           <div className="flex space-x-2 md:items-center">
             <PhoneIcon />
             <Link href="tel:07903106037">
-              <span className="cursor-pointer">0790 310 6037</span>
+              <div className="flex cursor-pointer  items-center space-x-2 ">
+                <p className="flex  items-center space-x-1">
+                  (
+                  <UKIcon />
+                  <span>+44</span> )
+                </p>
+                <span> 790 310 6037</span>
+              </div>
             </Link>
           </div>
         </div>
