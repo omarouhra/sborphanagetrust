@@ -29,9 +29,18 @@ module.exports = {
             transform: 'scale(1.2)',
           },
         },
+        fadeIn: {
+          '0%':{
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          }
+        }
       },
       animation: {
         heartBeat: 'heartBeat 1.5s infinite both',
+        fadeIn : 'fadeIn 0.2s linear'
       },
       fontFamily: {
         dmSans: ["'DM Sans'", 'sans-serif'],
