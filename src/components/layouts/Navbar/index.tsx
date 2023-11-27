@@ -18,7 +18,7 @@ export default function Navbar() {
       <div>
         <header
           className={cx(
-            'flex w-full items-center justify-between  py-5 max-w-[1140px]  mx-auto',
+            'flex w-full items-center justify-between  py-5 max-w-[1140px]  mx-auto px-3',
           )}
         >
           <div className="w-44 lg:w-52">
