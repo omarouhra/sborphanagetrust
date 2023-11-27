@@ -22,7 +22,7 @@ export default function Photos() {
           {galleries.slice(0, 15).map(({ image, id }, index: number) => (
             <button
               key={index}
-              className="relative h-[300px] w-full rounded-2xl md:h-[244px] md:w-[365]"
+              className="relative h-[300px] w-full overflow-hidden rounded-2xl md:h-[244px] md:w-[365]"
               onClick={() => {
                 setSelectedImageId(id);
                 setIsOpen(true);
@@ -38,11 +38,11 @@ export default function Photos() {
             </button>
           ))}
         </div>
-        <div className="grid w-full gap-2 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
+        <div className="grid w-full gap-2 md:grid-cols-2 md:gap-4">
           {galleries.slice(15, 23).map(({ image, id }, index: number) => (
             <button
               key={index}
-              className="relative h-[300px] w-full rounded-2xl md:h-[550px] md:w-[365]"
+              className="relative h-[300px] w-full overflow-hidden rounded-2xl md:h-[550px] md:w-[365]"
               onClick={() => {
                 setSelectedImageId(id);
                 setIsOpen(true);
@@ -62,7 +62,7 @@ export default function Photos() {
           {galleries.slice(23, 38).map(({ image, id }, index: number) => (
             <button
               key={index}
-              className="relative  h-[300px] w-full rounded-2xl md:h-[244px] md:w-[365]"
+              className="relative  h-[300px] w-full overflow-hidden rounded-2xl md:h-[244px] md:w-[365]"
               onClick={() => {
                 setSelectedImageId(id);
                 setIsOpen(true);
@@ -92,7 +92,7 @@ export default function Photos() {
           >
             <ChevronLeftIcon />
           </button>
-          <div className="relative mt-12 h-[500px] md:mt-0 md:h-full md:flex-1">
+          <div className="relative mt-12 h-[500px] overflow-hidden md:mt-0 md:h-full md:flex-1">
             <CustomImage
               alt={`gallery_${selectedImgId}`}
               src={selectedImage[0]?.image}
