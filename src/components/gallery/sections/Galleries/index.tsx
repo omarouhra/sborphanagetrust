@@ -41,7 +41,9 @@ export default function Galleries() {
               </button>
             ))}
           </div>
-          {currentTab === 'Photos' ? <Photos /> : <Videos />}
+          <div className="w-full">
+            {currentTab === 'Photos' ? <Photos /> : <Videos />}
+          </div>
         </div>
       </Wrapper>
     </section>
