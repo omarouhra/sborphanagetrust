@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Videos() {
   return (
-    <div className="flex h-[590px] w-full items-center justify-center rounded-2xl bg-white">
+    <div className="h-[590px] w-full">
       <iframe
+        src="https://player.vimeo.com/video/408442002?h=94581ad89f"
         width="100%"
         height="100%"
-        className="rounded-2xl"
-        src="https://player.vimeo.com/92c820de-dcd2-4e55-b653-12b17180a699"
+        allow="autoplay; fullscreen; picture-in-picture"
       ></iframe>
     </div>
   );
