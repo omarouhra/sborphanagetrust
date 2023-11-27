@@ -40,7 +40,7 @@ export default function Form() {
           <div className="flex flex-col space-y-4 rounded-2xl border border-gray-50 bg-white px-2 py-3 md:flex-row md:items-start md:justify-between md:space-x-3 md:space-y-0 md:p-4">
             <GradientContainer className="nd:w-[400px] flex flex-col items-start justify-between space-y-5 rounded-md py-8 md:h-[490px]">
               <div>
-                <p className="mb-2 text-start text-3xl font-medium leading-normal md:mb-4 md:text-2xl">
+                <p className="mb-2 text-start text-3xl font-semibold leading-normal md:mb-4 md:text-3xl">
                   Contact Information
                 </p>
                 <p className="mb-8 text-start text-lg leading-normal md:mb-16">
