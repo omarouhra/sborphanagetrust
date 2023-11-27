@@ -20,6 +20,19 @@ module.exports = {
           4: '#8D8D8D',
         },
       },
+      keyframes: {
+        heartBeat: {
+          '0%, 100%, 40%': {
+            transform: 'scale(1)',
+          },
+          '30%,50%': {
+            transform: 'scale(1.2)',
+          },
+        },
+      },
+      animation: {
+        heartBeat: 'heartBeat 1.5s infinite both',
+      },
       fontFamily: {
         dmSans: ["'DM Sans'", 'sans-serif'],
       },

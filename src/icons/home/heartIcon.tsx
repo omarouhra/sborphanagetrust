@@ -9,6 +9,7 @@ export default function HeartIcon(props: SVGProps<SVGSVGElement>) {
       viewBox="0 0 17 14"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="animate-heartBeat"
       {...props}
     >
       <path
