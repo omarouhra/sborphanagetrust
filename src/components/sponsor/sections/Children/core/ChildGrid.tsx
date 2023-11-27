@@ -25,7 +25,7 @@ export default function ChildGrid({
   return (
     <div className="relative">
       <div className="flex h-[310px] w-[290px] items-end rounded-2xl bg-white px-5 py-6">
-        <div className="w-full flex flex-col h-2/3">
+        <div className="flex h-2/3 w-full flex-col">
           <p className="mb-8 pt-5 text-center text-lg font-medium leading-normal text-dark-1">
             {name}
           </p>
