@@ -25,42 +25,33 @@ export default function ChildGrid({
   return (
     <div className="relative">
       <div className="flex h-[310px] w-[290px] items-end rounded-2xl bg-white px-5 py-6">
-        <div className="w-full">
-          <p className="mb-8 text-center text-lg font-medium leading-normal text-dark-1">
+        <div className="w-full flex flex-col h-2/3">
+          <p className="mb-8 pt-5 text-center text-lg font-medium leading-normal text-dark-1">
             {name}
           </p>
           <div className="flex flex-col space-y-4 text-sm leading-normal text-dark-1">
-            <div
-              className={cx(
-                'flex flex-nowrap items-center space-x-2',
-                dateOfBirth ? 'opacity-100' : 'opacity-0 select-none',
-              )}
-            >
-              <BirthIcon />
-              <p>
-                Date of Birth: <span>{dateOfBirth}</span>
-              </p>
-            </div>
-            <div
-              className={cx(
-                'flex flex-nowrap items-center space-x-2',
-                siblings ? 'opacity-100' : 'opacity-0 select-none',
-              )}
-            >
-              <SbilingIcon />
-              <p>Siblings: {siblings}</p>
-            </div>
-            <div
-              className={cx(
-                'flex flex-nowrap items-center space-x-2',
-                admissionDate ? 'opacity-100' : 'opacity-0 select-none',
-              )}
-            >
-              <CalendarIcon />
-              <p>
-                Admission Date: <span>{admissionDate}</span>
-              </p>
-            </div>
+            {dateOfBirth && (
+              <div className={cx('flex flex-nowrap items-center space-x-2')}>
+                <BirthIcon />
+                <p>
+                  Date of Birth: <span>{dateOfBirth}</span>
+                </p>
+              </div>
+            )}
+            {siblings && (
+              <div className={cx('flex flex-nowrap items-center space-x-2')}>
+                <SbilingIcon />
+                <p>Siblings: {siblings}</p>
+              </div>
+            )}
+            {admissionDate && (
+              <div className={cx('flex flex-nowrap items-center space-x-2')}>
+                <CalendarIcon />
+                <p>
+                  Admission Date: <span>{admissionDate}</span>
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
