@@ -11,7 +11,7 @@ export default function SbilingIcon(props: SVGProps<SVGSVGElement>) {
       fill="none"
       {...props}
     >
-      <g clip-path="url(#clip0_112_2483)">
+      <g clipPath="url(#clip0_112_2483)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -28,8 +28,8 @@ export default function SbilingIcon(props: SVGProps<SVGSVGElement>) {
           y2="2.84442"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#009174" />
-          <stop offset="1" stop-color="#52BD94" />
+          <stop stopColor="#009174" />
+          <stop offset="1" stopColor="#52BD94" />
         </linearGradient>
         <clipPath id="clip0_112_2483">
           <rect

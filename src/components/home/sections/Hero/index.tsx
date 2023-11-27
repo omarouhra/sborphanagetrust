@@ -3,26 +3,35 @@ import React from 'react';
 import Button from '@/components/core/Button';
 import Heading from '@/components/core/Heading';
 import Paragraph from '@/components/core/Paragraph';
+import HeroLayout from '@/components/layouts/HeroLayout';
 import HeartIcon from '@/icons/home/heartIcon';
+import heroBg from '@/public/assets/home/hero-bg.png';
 
 export default function Hero() {
   return (
-    <section className="flex h-[80vh] flex-col items-center justify-center bg-[url('/assets/home/hero-bg.png')] bg-cover bg-no-repeat px-3 text-white">
-      <div className="w-full max-w-[800px] text-center">
+    <HeroLayout heroBg={heroBg}>
+      <div className="w-full max-w-[800px]">
         <Heading
           text="Empower Orphaned Children through Education and Hope"
           className="mb-4"
         />
         <Paragraph
           text="Your Compassionate Donation Can Make a Profound Difference: Join Us in Our Mission to Transform Lives and Give Hope to Children in Need of a Brighter Future"
-          className="mb-8"
+          className="mb-4"
         />
       </div>
-      <Button
-        icon={<HeartIcon />}
-        label="Donate Now"
-        className="duration-200 hover:opacity-90"
-      />
-    </section>
+      <Button className="duration-200 hover:opacity-90">
+        <a
+          href="https://www.paypal.com/paypalme/sborphanage"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate Now
+        </a>
+        <div className="ml-3 w-4">
+          <HeartIcon />
+        </div>
+      </Button>
+    </HeroLayout>
   );
 }

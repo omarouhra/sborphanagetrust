@@ -13,6 +13,7 @@ type Props = {
   features: string[];
   label: string;
   hasSign: boolean;
+  link: string;
 };
 
 const styles = {
@@ -44,6 +45,7 @@ export default function DonationTable({
   price,
   features,
   label,
+  link,
   hasSign,
 }: Props) {
   return (
@@ -106,10 +108,18 @@ export default function DonationTable({
           ))}
           <div className="mt-7 flex w-full items-center justify-center">
             <Button
-              label={label}
               appearance={styles[appearance].button as any}
               className={styles[appearance].buttStyle}
-            />
+            >
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {label}
+              </a>
+            </Button>
+            {/* <button className="py-2 px-5 bg-green-1 text-white ">
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <span>click me</span>
+              </a>
+            </button> */}
           </div>
         </div>
       </div>

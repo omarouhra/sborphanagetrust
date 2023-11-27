@@ -2,10 +2,26 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+  background: #f4f4f4;
+}
+
 li {
   list-style-type: none;
 }
 
 textarea {
   resize: none;
+}
+
+span {
+  position: static !important;
+  height: -webkit-fill-available !important;
 }

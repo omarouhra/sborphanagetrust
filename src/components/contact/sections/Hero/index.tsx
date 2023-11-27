@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Heading from '@/components/core/Heading';
+import HeroLayout from '@/components/layouts/HeroLayout';
+import heroBg from '@/public/assets/contact/hero-bg.png';
 
 export default function Hero() {
   return (
-    <section className="flex h-[80vh] flex-col items-center justify-center bg-[url('/assets/contact/hero-bg.png')] bg-cover bg-no-repeat px-3 text-white md:bg-contain">
-      <div className="w-full text-center">
-        <Heading text="Get In Touch" />
-      </div>
-    </section>
+    <HeroLayout heroBg={heroBg}>
+      <Heading text="Get In Touch" />
+    </HeroLayout>
   );
 }

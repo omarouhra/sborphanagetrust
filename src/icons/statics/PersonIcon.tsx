@@ -11,7 +11,7 @@ export default function PersonIcon(props: SVGProps<SVGSVGElement>) {
       fill="none"
       {...props}
     >
-      <g clip-path="url(#clip0_112_1191)">
+      <g clipPath="url(#clip0_112_1191)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"

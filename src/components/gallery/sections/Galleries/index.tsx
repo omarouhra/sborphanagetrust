@@ -11,7 +11,7 @@ export default function Galleries() {
   const [currentTab, setCurrentTab] = useState<string>('Photos');
 
   return (
-    <section className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
+    <section>
       <Wrapper>
         <div className="flex flex-col items-center  justify-center space-y-8">
           <div
@@ -41,7 +41,9 @@ export default function Galleries() {
               </button>
             ))}
           </div>
-          {currentTab === 'Photos' ? <Photos /> : <Videos />}
+          <div className="w-full">
+            {currentTab === 'Photos' ? <Photos /> : <Videos />}
+          </div>
         </div>
       </Wrapper>
     </section>
