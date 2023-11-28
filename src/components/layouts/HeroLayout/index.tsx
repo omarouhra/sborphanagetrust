@@ -27,7 +27,7 @@ export default function HeroLayout({ heroBg, children, className }: Props) {
               isOverlay
             />
           </div>
-          <div className="absolute inset-0 flex h-full w-full flex-col items-start justify-end p-8">
+          <div className="absolute inset-0 flex h-full w-full flex-col items-start justify-end px-2 py-4 md:p-8">
             {children}
           </div>
         </div>
