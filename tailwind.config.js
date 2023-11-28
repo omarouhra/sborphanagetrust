@@ -18,6 +18,7 @@ module.exports = {
           2: '#4F4F4F',
           3: '#333333',
           4: '#8D8D8D',
+          5: '#F9FAFB',
         },
       },
       keyframes: {
