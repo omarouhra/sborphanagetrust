@@ -81,11 +81,11 @@ export default function Footer() {
               <div className="flex space-x-2 transition duration-200 hover:text-green-1 md:items-center">
                 <Link href="tel:07903106037">
                   <div className="flex cursor-pointer  items-center space-x-2 ">
-                    <p className="flex  items-center space-x-1">
+                    <div className="flex  items-center space-x-1">
                       <UKIcon />
-                      <span>+44</span>
-                    </p>
-                    <span> 790 310 6037</span>
+                      <p>+44</p>
+                    </div>
+                    <p> 790 310 6037</p>
                   </div>
                 </Link>
               </div>
@@ -95,18 +95,18 @@ export default function Footer() {
         </div>
       </Wrapper>
       <div className=" mx-auto flex w-full max-w-[1140px] items-center justify-center py-8">
-        <p className="px-3 text-xs leading-normal text-grey-3">
-          <span>
+        <div className="px-3 text-xs leading-normal text-grey-3">
+          <p>
             © 2020 SB Orphanage Trust. All rights reserved. SB Orphanage Trust
             is a registered charity in UK | Charity No: 1147041 | Website Design
             by
-          </span>
+          </p>
           <Link href={'https://www.amigoscode.com/'}>
             <a target="_blank" className="ml-0.5 text-green-1">
               amigosCode
             </a>
           </Link>
-        </p>
+        </div>
       </div>
     </footer>
   );

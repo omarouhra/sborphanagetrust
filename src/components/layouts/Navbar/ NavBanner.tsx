@@ -29,20 +29,18 @@ export default function NavBanner() {
           <div className="flex items-center space-x-2">
             <EmailIcon />
             <Link href="mailto:info@sborphanagetrust.co.uk">
-              <span className="cursor-pointer">
-                info@sborphanagetrust.co.uk
-              </span>
+              <p className="cursor-pointer">info@sborphanagetrust.co.uk</p>
             </Link>
           </div>
           <div className="flex space-x-2 md:items-center">
             <PhoneIcon />
             <Link href="tel:07903106037">
               <div className="flex cursor-pointer  items-center space-x-2 ">
-                <p className="flex  items-center space-x-1">
+                <div className="flex  items-center space-x-1">
                   <UKIcon />
-                  <span>+44</span>
-                </p>
-                <span> 790 310 6037</span>
+                  <p>+44</p>
+                </div>
+                <p> 790 310 6037</p>
               </div>
             </Link>
           </div>

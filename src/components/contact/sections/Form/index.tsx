@@ -52,9 +52,9 @@ export default function Form() {
                   <div className="z-50 flex items-center space-x-3">
                     <EmailIcon />
                     <Link href="mailto:info@sborphanagetrust.co.uk">
-                      <span className="cursor-pointer">
+                      <p className="cursor-pointer">
                         info@sborphanagetrust.co.uk
-                      </span>
+                      </p>
                     </Link>
                   </div>
                   <div className="z-50 flex space-x-3 md:items-center">
@@ -63,9 +63,9 @@ export default function Form() {
                       <div className="flex cursor-pointer  items-center space-x-2 ">
                         <p className="flex  items-center space-x-1">
                           <UKIcon />
-                          <span>+44</span>
+                          <p>+44</p>
                         </p>
-                        <span> 790 310 6037</span>
+                        <p> 790 310 6037</p>
                       </div>
                     </Link>
                   </div>

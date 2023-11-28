@@ -33,9 +33,7 @@ export default function ChildGrid({
             {dateOfBirth && (
               <div className={cx('flex flex-nowrap items-center space-x-2')}>
                 <BirthIcon />
-                <p>
-                  Date of Birth: <span>{dateOfBirth}</span>
-                </p>
+                <p>Date of Birth: {dateOfBirth}</p>
               </div>
             )}
             {siblings && (
@@ -47,9 +45,7 @@ export default function ChildGrid({
             {admissionDate && (
               <div className={cx('flex flex-nowrap items-center space-x-2')}>
                 <CalendarIcon />
-                <p>
-                  Admission Date: <span>{admissionDate}</span>
-                </p>
+                <p>Admission Date: {admissionDate}</p>
               </div>
             )}
           </div>

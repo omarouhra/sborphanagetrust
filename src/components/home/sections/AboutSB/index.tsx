@@ -23,9 +23,9 @@ export default function AboutSB() {
               className="mb-2 font-medium text-green-1"
             />
             <div className="flex w-full justify-end">
-              <span className="text-sm font-semibold text-green-1">
+              <p className="text-sm font-semibold text-green-1">
                 and he held his two fingers together.
-              </span>
+              </p>
             </div>
           </div>
           <div className="text-dark-1">

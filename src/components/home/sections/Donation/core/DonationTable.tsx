@@ -31,7 +31,7 @@ const styles = {
     text: 'text-grey-1',
     priceText: 'text-dark-1',
     bgColor: 'bg-white',
-    featBg: 'bg-[#F9FAFB]',
+    featBg: 'bg-grey-5',
     button: 'secondary',
     buttStyle: 'shadow-xl shadow-gray-300',
   },
@@ -86,9 +86,7 @@ export default function DonationTable({
               styles[appearance].priceText,
             )}
           >
-            {hasSign && (
-              <span className="text-sm font-light text-grey-1">£</span>
-            )}
+            {hasSign && <p className="text-sm font-light text-grey-1">£</p>}
             <p>{price}</p>
           </div>
         </div>
