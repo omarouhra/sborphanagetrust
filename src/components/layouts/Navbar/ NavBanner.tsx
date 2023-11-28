@@ -15,12 +15,12 @@ export default function NavBanner() {
           <Link
             href={'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'}
           >
-            <a target="_blank">
+            <a target="_blank" aria-label="youtube-link">
               <YoutubeIcon />
             </a>
           </Link>
           <Link href={'https://www.facebook.com/rukyahijama1'}>
-            <a target="_blank">
+            <a target="_blank" aria-label="facebook-link">
               <FacebookIcon />
             </a>
           </Link>

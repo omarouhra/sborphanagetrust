@@ -22,6 +22,7 @@ export default function Hero() {
           href="https://www.paypal.com/paypalme/sborphanage"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="paypal-page"
         >
           Donate Now
         </a>

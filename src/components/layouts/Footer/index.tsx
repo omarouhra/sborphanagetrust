@@ -27,7 +27,10 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-2 text-white">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient">
-                <Link href={'https://www.facebook.com/rukyahijama1'}>
+                <Link
+                  href={'https://www.facebook.com/rukyahijama1'}
+                  aria-label="facebook-link"
+                >
                   <a target="_blank">
                     <Facebook />
                   </a>
@@ -39,7 +42,7 @@ export default function Footer() {
                     'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'
                   }
                 >
-                  <a target="_blank">
+                  <a target="_blank" aria-label="youtube-link">
                     <Youtube />
                   </a>
                 </Link>
@@ -55,6 +58,7 @@ export default function Footer() {
                     className={
                       'w-max bg-grey-3 bg-clip-text text-sm text-transparent transition duration-300 hover:bg-gradient'
                     }
+                    aria-label={link}
                   >
                     {name}
                   </a>
@@ -102,7 +106,11 @@ export default function Footer() {
             by
           </p>
           <Link href={'https://www.amigoscode.com/'}>
-            <a target="_blank" className="ml-0.5 text-green-1">
+            <a
+              target="_blank"
+              className="ml-0.5 text-green-1"
+              aria-label="amigoscode-page"
+            >
               amigosCode
             </a>
           </Link>

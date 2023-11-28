@@ -78,13 +78,16 @@ export default function Form() {
                       'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'
                     }
                   >
-                    <a target="_blank">
+                    <a target="_blank" aria-label="youtube-link">
                       <YoutubeIcon />
                     </a>
                   </Link>
                 </div>
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-green-1">
-                  <Link href={'https://www.facebook.com/rukyahijama1'}>
+                  <Link
+                    href={'https://www.facebook.com/rukyahijama1'}
+                    aria-label="facebook-link"
+                  >
                     <a target="_blank">
                       <FacebookIcon />
                     </a>
