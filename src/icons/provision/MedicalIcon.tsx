@@ -4,34 +4,17 @@ import React from 'react';
 export default function MedicalIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="37"
-      height="40"
-      viewBox="0 0 37 40"
+      width="38"
+      height="37"
+      viewBox="0 0 38 37"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}
     >
-      <rect width="37" height="40" fill="url(#pattern0)" />
-      <defs>
-        <pattern
-          id="pattern0"
-          patternContentUnits="objectBoundingBox"
-          width="1"
-          height="1"
-        >
-          <use
-            xlinkHref="#image0_112_1179"
-            transform="matrix(0.0263678 0 0 0.0243902 -0.0932762 0)"
-          />
-        </pattern>
-        <image
-          id="image0_112_1179"
-          width="45"
-          height="41"
-          xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAApAC0DASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDy+iivsD4V/sJ3GraT4Y8Uah4rhtzOtvqD6aunmVdhKuIzJ5o5K4B+XjJ617d1Fc0nZH8rYHLcVmdR0sJDmklfdLT52PnC3+DPxAuoY5ofA3iSaGRQySR6RcMrKeQQQnIrL8ReA/Evg+OGTXvDuraJHMSsb6jYy24cjqFLqMn6V+rXi7RfGGpXsL+HPE+n6HarHtkhu9IN4zPk/MGEyYGMDGD0rl/iz8Gb74wfCyHwtrGvwR6os8dw+qw6fhCyk/dh8z5cqcffNcP1h7pdfw7n6RW4HUYzVGcnJJtO0eVvt8V1fbVWXfv+WFFeyftEfs43fwBn0YvrUeuWepLIFmW38hkdNuVK724wwwc+vTv43XXCcaivE/MsZg6+X1nh8THlmumj313WgV+vXwr/AOSZeEv+wTa/+iVr8ha/Xb4R3EV38LfCEsEiTRNpNrh0YEHESg8/WoxH8F+q/Jn33Af+/Vf8H6o+Y/2tP2o59Kv5vB/he41fQ9f0nUUa7voWVI5ovKYlFIbccl0PIH3a+g/gj8atK+OHh281XSbK9sobO4+ySLfBAzPsVsjazcYYVP8AGb4NaT8bvDtlo+sXl7ZW9peLeo9iyBywR0wdysMYc9uwrvUURoqjooxXApR9iov4v+Atfn26H6Xh8HmFPM6uIqVr0mlZW9dN9OW6u7e95Hxx/wAFFv8AkG+CP+ut1/6DFXxLX2t/wUWuYvs3gi381PPD3Uhj3DdtxGM49M18U10YT+G/Vn5Fxm1/a8/SP5BWxpvjHX9GtRbafrmpWNspJENtdyRoCepwpArHortPiYylB3i7M6L/AIWN4s/6GjWf/BhN/wDFUf8ACxvFn/Q0az/4MJv/AIqudopWRr9Yrfzv72W9S1a+1q6NzqF5cX9yQFM1zK0j4HQZYk1UoooMZScndu7P/9k="
-        />
-      </defs>
+      <path
+        d="M34.5749 7.48968H27.4536V6.34886C27.4536 4.04202 25.5261 2.16528 23.1569 2.16528H14.8001C12.4309 2.16528 10.5035 4.04202 10.5035 6.34886V7.48968H3.38259C1.62989 7.48968 0.208801 8.87297 0.208801 10.5799V31.3841C0.208801 33.0907 1.62989 34.4744 3.38259 34.4744H34.5753C36.328 34.4744 37.7491 33.0907 37.7491 31.3841V10.5799C37.7486 8.87297 36.3276 7.48968 34.5749 7.48968ZM13.0061 6.34886C13.0061 5.38551 13.8107 4.60208 14.8001 4.60208H23.1573C24.1463 4.60208 24.9513 5.38551 24.9513 6.34886V7.17087H13.0061V6.34886ZM27.084 23.6879H21.7575V28.8742H16.1999V23.6879H10.8735V18.2762H16.1995V13.0898H21.7575V18.2762H27.0836L27.084 23.6879Z"
+        fill="currentColor"
+      />
     </svg>
   );
 }
