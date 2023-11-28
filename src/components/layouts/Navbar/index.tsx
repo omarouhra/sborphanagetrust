@@ -54,7 +54,7 @@ export default function Navbar() {
                 aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
                 className={
                   isOpen
-                    ? 'flex -translate-y-6   flex-col   space-y-6 text-green-1 transition duration-500 ease-in-out md:-translate-y-5 '
+                    ? 'flex -translate-y-6   flex-col  space-y-6 text-green-1 transition duration-500 ease-in-out md:-translate-y-5 '
                     : 'flex translate-y-6 flex-col space-y-6 text-green-1 transition duration-500 ease-in-out  md:translate-y-5'
                 }
               >
@@ -64,7 +64,7 @@ export default function Navbar() {
             </Button>
           </div>
           {isOpen && (
-            <div className="fixed top-0 z-20 h-screen w-full space-y-3 overflow-hidden bg-white px-3 py-20">
+            <ul className="fixed top-0 z-20 h-screen w-full space-y-3 overflow-hidden bg-white px-3 py-20">
               {menuItems.map((menu, index) => {
                 return (
                   <MenuItems
@@ -75,7 +75,7 @@ export default function Navbar() {
                   />
                 );
               })}
-            </div>
+            </ul>
           )}
         </header>
       </div>
