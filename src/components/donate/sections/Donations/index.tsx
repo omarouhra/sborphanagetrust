@@ -8,13 +8,15 @@ export default function Donations() {
     <section>
       <Wrapper>
         <div className="mx-auto mb-10 w-full md:mb-24 md:max-w-3xl">
-          <div className="text-center text-lg font-light text-grey-2 md:text-2xl md:leading-normal">
+          <p className="text-center text-lg font-light text-grey-2 md:text-2xl md:leading-normal">
             All donations made via secure
-            <p className="px-1 font-medium text-green-1">PayPal</p>
+            <span className="h-auto px-1 font-medium text-green-1">PayPal</span>
             or
-            <p className="px-1 font-medium text-green-1">UK bank</p>
+            <span className="h-auto px-1 font-medium text-green-1">
+              UK bank
+            </span>
             transferfor direct debit please contact us via email.
-          </div>
+          </p>
         </div>
         <DonationGrid />
       </Wrapper>
