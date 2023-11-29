@@ -25,11 +25,8 @@ export default function Footer() {
             </p>
             <div className="flex items-center space-x-2 text-white">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient">
-                <Link
-                  href={'https://www.facebook.com/rukyahijama1'}
-                  aria-label="facebook-link"
-                >
-                  <a target="_blank">
+                <Link href={'https://www.facebook.com/rukyahijama1'}>
+                  <a target="_blank" aria-label="facebook-link">
                     <Facebook />
                   </a>
                 </Link>

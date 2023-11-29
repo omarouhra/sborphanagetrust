@@ -84,11 +84,8 @@ export default function Form() {
                   </Link>
                 </div>
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-green-1">
-                  <Link
-                    href={'https://www.facebook.com/rukyahijama1'}
-                    aria-label="facebook-link"
-                  >
-                    <a target="_blank">
+                  <Link href={'https://www.facebook.com/rukyahijama1'}>
+                    <a target="_blank" aria-label="facebook-link">
                       <FacebookIcon />
                     </a>
                   </Link>
