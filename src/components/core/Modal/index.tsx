@@ -25,12 +25,12 @@ export default function Modal({ isVisible, children, closeModal }: Props) {
   if (isVisible) {
     return (
       <div
-        className={`animate-fadeIn absolute inset-0 z-50 flex w-full overflow-hidden bg-black/70 `}
+        className={`absolute inset-0 z-50 flex w-full animate-fadeIn overflow-hidden bg-black/70`}
       >
         <div
-          className={`fixed flex h-screen w-full flex-col items-center  justify-center pb-8 backdrop-blur`}
+          className={`fixed top-0 flex h-screen w-full flex-col items-center justify-center pb-8 backdrop-blur`}
         >
-          <div className={`relative mx-auto w-full md:w-3/5 `} ref={divRef}>
+          <div className={`relative mx-auto w-full md:w-3/5`} ref={divRef}>
             <button
               onClick={() => closeModal()}
               className="mb-2 flex w-full justify-end "

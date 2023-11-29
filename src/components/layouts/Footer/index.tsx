@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import React from 'react';
 
 import Facebook from '@/icons/footer/facebook';
 import Youtube from '@/icons/footer/youtube';
 import LogoIcon from '@/icons/home/LogoIcon';
 import UKIcon from '@/icons/home/UKIcon';
-// import Logo from '@/public/assets/SB_Orphanage_Trust.svg';
 import { BANK_ACCOUNT } from '@/utils/constants/bankAccount';
 import { FOOTER_MENU } from '@/utils/constants/footerMenu';
 
@@ -28,7 +26,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2 text-white">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient">
                 <Link href={'https://www.facebook.com/rukyahijama1'}>
-                  <a target="_blank">
+                  <a target="_blank" aria-label="facebook-link">
                     <Facebook />
                   </a>
                 </Link>
@@ -39,7 +37,7 @@ export default function Footer() {
                     'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'
                   }
                 >
-                  <a target="_blank">
+                  <a target="_blank" aria-label="youtube-link">
                     <Youtube />
                   </a>
                 </Link>
@@ -55,6 +53,7 @@ export default function Footer() {
                     className={
                       'w-max bg-grey-3 bg-clip-text text-sm text-transparent transition duration-300 hover:bg-gradient'
                     }
+                    aria-label={link}
                   >
                     {name}
                   </a>
@@ -81,11 +80,11 @@ export default function Footer() {
               <div className="flex space-x-2 transition duration-200 hover:text-green-1 md:items-center">
                 <Link href="tel:07903106037">
                   <div className="flex cursor-pointer  items-center space-x-2 ">
-                    <p className="flex  items-center space-x-1">
+                    <div className="flex  items-center space-x-1">
                       <UKIcon />
-                      <span>+44</span>
-                    </p>
-                    <span> 790 310 6037</span>
+                      <p>+44</p>
+                    </div>
+                    <p> 790 310 6037</p>
                   </div>
                 </Link>
               </div>
@@ -93,21 +92,25 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </Wrapper>
-      <div className=" mx-auto flex w-full max-w-[1140px] items-center justify-center py-8">
-        <p className="px-3 text-xs leading-normal text-grey-3">
-          <span>
+        <div className="flex flex-col  space-y-8 border-t pt-8 text-xs leading-normal text-grey-3 lg:flex-row lg:items-center  lg:justify-between lg:space-y-0">
+          <p>
             © 2020 SB Orphanage Trust. All rights reserved. SB Orphanage Trust
-            is a registered charity in UK | Charity No: 1147041 | Website Design
-            by
-          </span>
+            is a registered charity in UK | Charity No: 11470lg
+          </p>
           <Link href={'https://www.amigoscode.com/'}>
-            <a target="_blank" className="ml-0.5 text-green-1">
-              amigosCode
+            <a
+              target="_blank"
+              className="flex space-x-1"
+              aria-label="amigoscode-page"
+            >
+              <p>Website Design by</p>
+              <span className="h-auto font-semibold text-green-1">
+                AMIGOSCODE
+              </span>
             </a>
           </Link>
-        </p>
-      </div>
+        </div>
+      </Wrapper>
     </footer>
   );
 }

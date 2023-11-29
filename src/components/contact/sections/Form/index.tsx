@@ -34,38 +34,38 @@ export default function Form() {
     <section>
       <Wrapper>
         <div>
-          <p className="mb-16 text-center text-4xl font-bold leading-normal text-green-1 md:text-3xl">
+          <p className="mb-4 text-center text-2xl font-bold leading-normal text-green-1 md:mb-16 md:text-3xl">
             We&lsquo;d love to hear from you
           </p>
           <div className="flex flex-col space-y-4 rounded-2xl border border-gray-50 bg-white px-2 py-3 md:flex-row md:items-start md:justify-between md:space-x-3 md:space-y-0 md:p-4">
             <GradientContainer className="nd:w-[400px] flex flex-col items-start justify-between space-y-5 rounded-md py-8 md:h-[490px]">
               <div>
-                <p className="mb-2 text-start text-3xl font-semibold leading-normal md:mb-4 md:text-3xl">
+                <p className="mb-2 text-start text-2xl font-semibold leading-normal md:mb-4 md:text-3xl">
                   Contact Information
                 </p>
-                <p className="mb-8 text-start text-lg leading-normal md:mb-16">
+                <p className="mb-8 text-start leading-normal md:mb-16 md:text-lg">
                   We&lsquo;re here to assist you! Whether you have inquiries,
                   suggestions, or simply want to reach out, feel free to contact
                   us via phone or email
                 </p>
-                <div className="flex flex-col items-start space-y-4 text-lg">
+                <div className="flex flex-col items-start space-y-4 md:text-lg">
                   <div className="z-50 flex items-center space-x-3">
                     <EmailIcon />
                     <Link href="mailto:info@sborphanagetrust.co.uk">
-                      <span className="cursor-pointer">
+                      <p className="cursor-pointer">
                         info@sborphanagetrust.co.uk
-                      </span>
+                      </p>
                     </Link>
                   </div>
                   <div className="z-50 flex space-x-3 md:items-center">
                     <PhoneIcon />
                     <Link href="tel:07903106037">
-                      <div className="flex cursor-pointer  items-center space-x-2 ">
-                        <p className="flex  items-center space-x-1">
+                      <div className="flex cursor-pointer items-center space-x-2 ">
+                        <p className="flex items-center space-x-1">
                           <UKIcon />
-                          <span>+44</span>
+                          <p>+44</p>
                         </p>
-                        <span> 790 310 6037</span>
+                        <p> 790 310 6037</p>
                       </div>
                     </Link>
                   </div>
@@ -78,14 +78,14 @@ export default function Form() {
                       'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'
                     }
                   >
-                    <a target="_blank">
+                    <a target="_blank" aria-label="youtube-link">
                       <YoutubeIcon />
                     </a>
                   </Link>
                 </div>
                 <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-green-1">
                   <Link href={'https://www.facebook.com/rukyahijama1'}>
-                    <a target="_blank">
+                    <a target="_blank" aria-label="facebook-link">
                       <FacebookIcon />
                     </a>
                   </Link>

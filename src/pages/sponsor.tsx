@@ -8,13 +8,13 @@ import { baseURL } from '@/utils/constants/baseUrl';
 
 function sponsor() {
   return (
-    <div className="z-20 bg-[url('/assets/global-mask.png')] bg-cover bg-no-repeat">
+    <>
       <NextSeo title="Sponsor" canonical={`${baseURL}/about`} />
       <MainLayout>
         <Hero />
         <Children />
       </MainLayout>
-    </div>
+    </>
   );
 }
 

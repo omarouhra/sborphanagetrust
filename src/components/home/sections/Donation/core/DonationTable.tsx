@@ -31,7 +31,7 @@ const styles = {
     text: 'text-grey-1',
     priceText: 'text-dark-1',
     bgColor: 'bg-white',
-    featBg: 'bg-[#F9FAFB]',
+    featBg: 'bg-grey-5',
     button: 'secondary',
     buttStyle: 'shadow-xl shadow-gray-300',
   },
@@ -86,9 +86,7 @@ export default function DonationTable({
               styles[appearance].priceText,
             )}
           >
-            {hasSign && (
-              <span className="text-sm font-light text-grey-1">£</span>
-            )}
+            {hasSign && <p className="text-sm font-light text-grey-1">£</p>}
             <p>{price}</p>
           </div>
         </div>
@@ -111,15 +109,15 @@ export default function DonationTable({
               appearance={styles[appearance].button as any}
               className={styles[appearance].buttStyle}
             >
-              <a href={link} target="_blank" rel="noopener noreferrer">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="paypal-page"
+              >
                 {label}
               </a>
             </Button>
-            {/* <button className="py-2 px-5 bg-green-1 text-white ">
-              <a href={link} target="_blank" rel="noopener noreferrer">
-                <span>click me</span>
-              </a>
-            </button> */}
           </div>
         </div>
       </div>

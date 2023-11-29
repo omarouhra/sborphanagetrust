@@ -12,7 +12,7 @@ type Props = {
 export default function GradientContainer({ children, className }: Props) {
   return (
     <div className="relative rounded-2xl bg-gradient text-center text-green-2">
-      <div className={cx('py-8 md:px-12', className)}>{children}</div>
+      <div className={cx('py-8 px-2 md:px-12', className)}>{children}</div>
       <div className="absolute inset-0  h-full w-full">
         <CustomImage src={maskOb} alt="gradient-mask" isBlurring={false} />
       </div>

@@ -42,7 +42,7 @@ function CustomImage({
         layout={layout}
       />
       {isOverlay && !isLoading && (
-        <div className="absolute inset-0 rounded-lg bg-gradient-to-b from-[#0000007d] to-[#0000007d]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0000007d] to-[#0000007d] md:rounded-lg" />
       )}
     </>
   );
