@@ -107,7 +107,7 @@ export default function Footer() {
               aria-label="amigoscode-page"
             >
               <p>Website Design by</p>
-              <span className="font-semibold text-green-1 h-auto">
+              <span className="h-auto font-semibold text-green-1">
                 AMIGOSCODE
               </span>
             </a>

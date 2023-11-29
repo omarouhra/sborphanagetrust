@@ -34,7 +34,7 @@ export default function Form() {
     <section>
       <Wrapper>
         <div>
-          <p className="md:mb-16 mb-4 text-center text-2xl font-bold leading-normal text-green-1 md:text-3xl">
+          <p className="mb-4 text-center text-2xl font-bold leading-normal text-green-1 md:mb-16 md:text-3xl">
             We&lsquo;d love to hear from you
           </p>
           <div className="flex flex-col space-y-4 rounded-2xl border border-gray-50 bg-white px-2 py-3 md:flex-row md:items-start md:justify-between md:space-x-3 md:space-y-0 md:p-4">
@@ -43,7 +43,7 @@ export default function Form() {
                 <p className="mb-2 text-start text-2xl font-semibold leading-normal md:mb-4 md:text-3xl">
                   Contact Information
                 </p>
-                <p className="mb-8 text-start md:text-lg leading-normal md:mb-16">
+                <p className="mb-8 text-start leading-normal md:mb-16 md:text-lg">
                   We&lsquo;re here to assist you! Whether you have inquiries,
                   suggestions, or simply want to reach out, feel free to contact
                   us via phone or email
