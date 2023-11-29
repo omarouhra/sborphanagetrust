@@ -11,10 +11,10 @@ type Props = {
 };
 export default function HeroLayout({ heroBg, children, className }: Props) {
   return (
-    <div className="md:px-3">
+    <div className="md:px-2">
       <div
         className={cx(
-          'mx-auto flex max-w-[1200px]  text-white md:mt-8 md:rounded-xl',
+          'mx-auto flex max-w-[1140px]  text-white md:mt-8 md:rounded-xl',
           className,
         )}
       >
