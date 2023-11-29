@@ -30,11 +30,12 @@ export default function Navbar() {
               <LogoIcon />
             </Link>
           </div>
-
-          <nav className="hidden w-full flex-row justify-end space-x-3 lg:flex">
-            {menuItems.map((menu, index) => {
-              return <MenuItems items={menu} key={index} pathname={pathname} />;
-            })}
+          <nav>
+            <ul className="hidden w-full flex-row justify-end space-x-3 lg:flex">
+              {menuItems.map((menu, index) => (
+                <MenuItems items={menu} key={index} pathname={pathname} />
+              ))}
+            </ul>
           </nav>
           <div
             className={cx(
@@ -62,16 +63,14 @@ export default function Navbar() {
           </div>
           {isOpen && (
             <ul className="fixed top-0 z-50 h-screen w-full space-y-3 overflow-hidden bg-white px-3 py-20">
-              {menuItems.map((menu, index) => {
-                return (
-                  <MenuItems
-                    items={menu}
-                    key={index}
-                    pathname={pathname}
-                    className="justify-center"
-                  />
-                );
-              })}
+              {menuItems.map((menu, index) => (
+                <MenuItems
+                  items={menu}
+                  key={index}
+                  pathname={pathname}
+                  className="justify-center"
+                />
+              ))}
             </ul>
           )}
         </header>
