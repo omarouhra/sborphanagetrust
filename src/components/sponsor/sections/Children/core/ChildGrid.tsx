@@ -24,9 +24,9 @@ export default function ChildGrid({
 }: Props) {
   return (
     <div>
-      <div className="w-full -space-y-24 ">
+      <div className="w-full -space-y-24">
         <div className="flex items-center justify-center">
-          <div className="relative w-44 h-44 rounded-full">
+          <div className="relative h-44 w-44 rounded-full">
             <CustomImage
               src={image}
               alt={`${name}-child`}
@@ -37,11 +37,13 @@ export default function ChildGrid({
             />
           </div>
         </div>
-        <div className=" flex w-full flex-col items-center justify-center shadow bg-white rounded-xl pt-24 pb-8 min-h-[300px] h-full">
-          <p className="mb-8 pt-5 text-center text-lg font-medium leading-normal text-dark-1">
-            {name}
-          </p>
-          <div className="flex flex-col space-y-4 text-sm leading-normal text-dark-1">
+        <div className=" flex h-full min-h-[300px] w-full flex-col items-center justify-center rounded-xl bg-white pb-8 pt-24 shadow">
+          <div className="h-full">
+            <p className="mb-8 pt-5 text-center text-lg font-medium leading-normal text-dark-1">
+              {name}
+            </p>
+          </div>
+          <div className="flex flex-1 flex-col space-y-4 text-sm leading-normal text-dark-1">
             <div>
               {dateOfBirth && (
                 <div className={cx('flex flex-nowrap items-center space-x-2')}>
