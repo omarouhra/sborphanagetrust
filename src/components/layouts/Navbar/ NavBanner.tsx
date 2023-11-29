@@ -10,7 +10,7 @@ import YoutubeIcon from '@/icons/share/youtubeIcon';
 export default function NavBanner() {
   return (
     <section className="hidden items-start justify-between bg-gradient md:flex">
-      <div className="mx-auto flex w-full max-w-[1140px] flex-col items-start space-y-2  px-3 py-5 text-white md:flex-row md:items-center md:justify-between md:space-x-3">
+      <div className="mx-auto flex w-full max-w-[1140px] flex-col items-start space-y-2  px-2 py-5 text-white md:flex-row md:items-center md:justify-between md:space-x-3">
         <div className="flex items-center space-x-4">
           <Link
             href={'https://www.youtube.com/channel/UCkjUA3xAWBTPSVe95BMyqxg'}
