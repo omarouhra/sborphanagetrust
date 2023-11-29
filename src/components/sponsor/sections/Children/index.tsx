@@ -9,7 +9,7 @@ export default function Children() {
   return (
     <section className="pt-16">
       <Wrapper>
-        <div className="grid place-items-center gap-y-28 md:grid-cols-2 md:gap-x-4 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-36 xl:grid-cols-4 xl:gap-x-44 xl:gap-y-36">
+        <div className="grid gap-4 md:gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4">
           {students.map((student, index: number) => (
             <ChildGrid key={index} {...student} />
           ))}

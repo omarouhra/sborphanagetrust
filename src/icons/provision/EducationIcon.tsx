@@ -4,7 +4,7 @@ import React from 'react';
 export default function EducationIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width="23"
+      width="28"
       height="28"
       viewBox="0 0 23 28"
       fill="none"

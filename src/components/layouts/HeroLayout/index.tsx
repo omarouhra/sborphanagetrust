@@ -18,12 +18,13 @@ export default function HeroLayout({ heroBg, children, className }: Props) {
           className,
         )}
       >
-        <div className="relative h-[500px]">
-          <div className="relative h-full">
+        <div className="relative h-[500px] bg-gray-300 md:rounded-lg overflow-hidden">
+          <div className="relative h-full overflow-hidden">
             <CustomImage
               src={heroBg}
               alt="hero"
               className="md:rounded-lg"
+              isBlurring={false}
               isOverlay
             />
           </div>

@@ -26,24 +26,24 @@ export default function NavBanner() {
           </Link>
         </div>
         <div className="flex flex-col items-start space-y-2 text-sm md:flex-row md:items-center md:space-x-8 md:space-y-0">
-          <div className="flex items-center space-x-2">
-            <EmailIcon />
-            <Link href="mailto:info@sborphanagetrust.co.uk">
-              <p className="cursor-pointer">info@sborphanagetrust.co.uk</p>
-            </Link>
-          </div>
-          <div className="flex space-x-2 md:items-center">
-            <PhoneIcon />
-            <Link href="tel:07903106037">
-              <div className="flex cursor-pointer  items-center space-x-2 ">
+          <Link href="mailto:info@sborphanagetrust.co.uk" title="email">
+            <div className="flex cursor-pointer items-center space-x-2">
+              <EmailIcon />
+              <p>info@sborphanagetrust.co.uk</p>
+            </div>
+          </Link>
+          <Link href="tel:07903106037" title="phone number">
+            <div className="flex cursor-pointer space-x-2 md:items-center ">
+              <PhoneIcon />
+              <div className="flex  items-center space-x-2 ">
                 <div className="flex  items-center space-x-1">
                   <UKIcon />
                   <p>+44</p>
                 </div>
                 <p> 790 310 6037</p>
               </div>
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

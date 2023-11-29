@@ -5,7 +5,7 @@ export default function FoodIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       width="28"
-      height="32"
+      height="28"
       viewBox="0 0 12 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

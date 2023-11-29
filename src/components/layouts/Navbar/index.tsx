@@ -25,10 +25,7 @@ export default function Navbar() {
             isOpen ? 'px-0' : 'px-3',
           )}
         >
-          <div className="w-44 lg:w-52">
-            {/**
-             * TODO:change Logo to SVG
-             */}
+          <div className="w-44 cursor-pointer lg:w-52">
             <Link href="/" aria-label="Home">
               <LogoIcon />
             </Link>
@@ -64,7 +61,7 @@ export default function Navbar() {
             </Button>
           </div>
           {isOpen && (
-            <ul className="fixed top-0 z-20 h-screen w-full space-y-3 overflow-hidden bg-white px-3 py-20">
+            <ul className="fixed top-0 z-50 h-screen w-full space-y-3 overflow-hidden bg-white px-3 py-20">
               {menuItems.map((menu, index) => {
                 return (
                   <MenuItems
