@@ -71,7 +71,7 @@ export default function Footer() {
       </Wrapper>
       <div className=" mx-auto flex w-full max-w-[1140px] items-center justify-center py-8">
         <p className="px-3 text-xs leading-normal text-grey-3">
-          © 2020 SB Orphanage Trust. All rights reserved. SB Orphanage Trust is
+          © 2024 SB Orphanage Trust. All rights reserved. SB Orphanage Trust is
           a registered charity in UK | Charity No: 1147041 | Website Design by
           2d Studio
         </p>
