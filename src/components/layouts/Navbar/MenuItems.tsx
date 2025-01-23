@@ -1,31 +1,17 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 
 import { cx } from '@/utils/cx';
-
-import Dropdown from './Dropdown';
 
 type Props = {
   items: {
     link: string;
     title: string;
-    submenu?: {
-      link: string;
-      title: string;
-    }[];
   };
   pathname: string;
+  className?: string;
 };
-function MenuItems({ items, pathname }: Props) {
-  const [isDropdownVisible, setDropdownVisible] = useState(false);
-
-  const handleMouseEnter = () => {
-    setDropdownVisible(true);
-  };
-
-  const handleMouseLeave = () => {
-    setDropdownVisible(false);
-  };
+function MenuItems({ items, pathname, className }: Props) {
   return (
     <li
       className={cx(
@@ -33,44 +19,22 @@ function MenuItems({ items, pathname }: Props) {
         pathname === items.link
           ? 'bg-green-600/10 bg-opacity-30'
           : 'hover:bg-green-600/10 hover:bg-opacity-30',
+        className,
       )}
     >
-      {items.submenu ? (
-        <div
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className="group relative"
-        >
-          <button
-            type="button"
-            aria-haspopup="menu"
-            className={cx(
-              'w-max text-transparent bg-clip-text',
-              pathname === items.link
-                ? 'bg-gradient'
-                : 'group-hover:bg-gradient bg-dark-1',
-            )}
-          >
-            {items.title}
-          </button>
-          {isDropdownVisible && (
-            <Dropdown submenus={items.submenu} pathname={pathname} />
+      <Link href={items.link}>
+        <a
+          aria-label={items.title}
+          className={cx(
+            'w-full text-center text-transparent  bg-clip-text',
+            pathname === items.link
+              ? 'bg-gradient'
+              : 'group-hover:bg-gradient bg-dark-1',
           )}
-        </div>
-      ) : (
-        <Link href={items.link}>
-          <a
-            className={cx(
-              'w-max text-transparent bg-clip-text',
-              pathname === items.link
-                ? 'bg-gradient'
-                : 'group-hover:bg-gradient bg-dark-1',
-            )}
-          >
-            {items.title}
-          </a>
-        </Link>
-      )}
+        >
+          {items.title}
+        </a>
+      </Link>
     </li>
   );
 }

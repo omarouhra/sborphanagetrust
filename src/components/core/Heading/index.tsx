@@ -10,8 +10,8 @@ type Props = {
 
 const styles = {
   hero: 'text-3xl md:text-6xl font-bold',
-  primary: 'text-4xl',
-  subTitle: 'text-xl',
+  primary: 'text-2xl md:text-4xl',
+  subTitle: 'text-lg md:text-xl',
 };
 
 function Heading({ appearance = 'hero', text, className }: Props) {

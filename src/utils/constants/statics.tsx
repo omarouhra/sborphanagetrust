@@ -1,7 +1,7 @@
 import ChartIcon from '@/icons/statics/ChartIcon';
 import CheckIcon from '@/icons/statics/CheckIcon';
-import EuroIcon from '@/icons/statics/EuroIcon';
 import PersonIcon from '@/icons/statics/PersonIcon';
+import PoundIcon from '@/icons/statics/PoundIcon';
 
 export const STATICS = [
   {
@@ -10,7 +10,7 @@ export const STATICS = [
     text: 'Number Of Children In Our Care Currently',
   },
   {
-    icon: <EuroIcon />,
+    icon: <PoundIcon />,
     title: '240',
     text: 'To Sponsor A Child For Year',
   },
