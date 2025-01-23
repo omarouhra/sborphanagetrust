@@ -5,14 +5,16 @@ import Wrapper from '@/components/layouts/Wrapper';
 
 export default function Donations() {
   return (
-    <section className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
+    <section>
       <Wrapper>
         <div className="mx-auto mb-10 w-full md:mb-24 md:max-w-3xl">
           <p className="text-center text-lg font-light text-grey-2 md:text-2xl md:leading-normal">
             All donations made via secure
-            <span className="px-1 font-medium text-green-1">PayPal</span>
+            <span className="h-auto px-1 font-medium text-green-1">PayPal</span>
             or
-            <span className="px-1 font-medium text-green-1">UK bank</span>
+            <span className="h-auto px-1 font-medium text-green-1">
+              UK bank
+            </span>
             transferfor direct debit please contact us via email.
           </p>
         </div>

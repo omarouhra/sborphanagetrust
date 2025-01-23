@@ -14,10 +14,8 @@ const Home: NextPage = () => (
     <NextSeo title="Home" canonical={baseURL} />
     <MainLayout>
       <Hero />
-      <div className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
-        <AboutSB />
-        <Provision />
-      </div>
+      <AboutSB />
+      <Provision />
       <Statics />
       <Donation />
     </MainLayout>

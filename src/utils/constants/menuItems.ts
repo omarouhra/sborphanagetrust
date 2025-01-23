@@ -6,6 +6,6 @@ export const menuItems = [
     title: 'Gallery',
     link: '/gallery',
   },
-  { title: 'Sponsored a Child', link: '/sponsor' },
+  { title: 'Sponsor a Child', link: '/sponsor' },
   { title: 'Contact us', link: '/contact' },
 ];

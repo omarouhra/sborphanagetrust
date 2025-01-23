@@ -17,6 +17,7 @@ const DONATION = [
     ],
     label: 'Sponsor a child',
     hasSign: true,
+    link: 'https://www.paypal.com/paypalme/sborphanage/240',
   },
   {
     appearance: 'selected',
@@ -32,6 +33,7 @@ const DONATION = [
     ],
     label: 'Zakat Donation',
     hasSign: false,
+    link: 'https://www.paypal.com/paypalme/sborphanage',
   },
   {
     appearance: 'normal',
@@ -47,6 +49,7 @@ const DONATION = [
     ],
     label: 'Sadaqah Donation',
     hasSign: false,
+    link: 'https://www.paypal.com/paypalme/sborphanage',
   },
 ];
 export default function DonationGrid() {

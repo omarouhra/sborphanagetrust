@@ -7,7 +7,7 @@ import Wrapper from '@/components/layouts/Wrapper';
 
 export default function Donation() {
   return (
-    <section className="bg-gradient-to-b from-[#cbf1e9d5] to-[#a5b2af5d]">
+    <section>
       <Wrapper>
         <div className="mb-12 flex flex-col items-center md:mb-28">
           <Heading

@@ -27,7 +27,7 @@ export default function CalendarIcon(props: SVGProps<SVGSVGElement>) {
           gradientUnits="userSpaceOnUse"
         >
           <stop stopColor="#009174" />
-          <stop offset="1" stop-color="#52BD94" />
+          <stop offset="1" stopColor="#52BD94" />
         </linearGradient>
       </defs>
     </svg>

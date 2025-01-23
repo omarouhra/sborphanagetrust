@@ -13,6 +13,7 @@ type Props = {
   features: string[];
   label: string;
   hasSign: boolean;
+  link: string;
 };
 
 const styles = {
@@ -30,7 +31,7 @@ const styles = {
     text: 'text-grey-1',
     priceText: 'text-dark-1',
     bgColor: 'bg-white',
-    featBg: 'bg-[#F9FAFB]',
+    featBg: 'bg-grey-5',
     button: 'secondary',
     buttStyle: 'shadow-xl shadow-gray-300',
   },
@@ -44,6 +45,7 @@ export default function DonationTable({
   price,
   features,
   label,
+  link,
   hasSign,
 }: Props) {
   return (
@@ -84,9 +86,7 @@ export default function DonationTable({
               styles[appearance].priceText,
             )}
           >
-            {hasSign && (
-              <span className="text-sm font-light text-grey-1">£</span>
-            )}
+            {hasSign && <p className="text-sm font-light text-grey-1">£</p>}
             <p>{price}</p>
           </div>
         </div>
@@ -106,10 +106,18 @@ export default function DonationTable({
           ))}
           <div className="mt-7 flex w-full items-center justify-center">
             <Button
-              label={label}
               appearance={styles[appearance].button as any}
               className={styles[appearance].buttStyle}
-            />
+            >
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="paypal-page"
+              >
+                {label}
+              </a>
+            </Button>
           </div>
         </div>
       </div>

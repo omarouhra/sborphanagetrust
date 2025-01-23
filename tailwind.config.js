@@ -18,7 +18,30 @@ module.exports = {
           2: '#4F4F4F',
           3: '#333333',
           4: '#8D8D8D',
+          5: '#F9FAFB',
         },
+      },
+      keyframes: {
+        heartBeat: {
+          '0%, 100%, 40%': {
+            transform: 'scale(1)',
+          },
+          '30%,50%': {
+            transform: 'scale(1.2)',
+          },
+        },
+        fadeIn: {
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
+        },
+      },
+      animation: {
+        heartBeat: 'heartBeat 1.5s infinite both',
+        fadeIn: 'fadeIn 0.2s linear',
       },
       fontFamily: {
         dmSans: ["'DM Sans'", 'sans-serif'],

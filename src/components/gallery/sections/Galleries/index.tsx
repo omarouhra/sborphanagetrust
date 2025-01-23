@@ -11,7 +11,7 @@ export default function Galleries() {
   const [currentTab, setCurrentTab] = useState<string>('Photos');
 
   return (
-    <section className="bg-gradient-to-b from-[#cbf1e9d5]  to-[#dee4e25d]">
+    <section>
       <Wrapper>
         <div className="flex flex-col items-center  justify-center space-y-8">
           <div
@@ -31,7 +31,7 @@ export default function Galleries() {
                   currentTab === label
                     ? 'text-[#F9FAFB]'
                     : 'text-green-1 hover:text-green-1/70'
-                }  z-50 flex items-center justify-center space-x-2 p-3 duration-300 ease-in-out`}
+                }  z-20 flex items-center justify-center space-x-2 p-3 duration-300 ease-in-out`}
                 onClick={() => {
                   setCurrentTab(label);
                 }}
@@ -41,7 +41,9 @@ export default function Galleries() {
               </button>
             ))}
           </div>
-          {currentTab === 'Photos' ? <Photos /> : <Videos />}
+          <div className="w-full">
+            {currentTab === 'Photos' ? <Photos /> : <Videos />}
+          </div>
         </div>
       </Wrapper>
     </section>
